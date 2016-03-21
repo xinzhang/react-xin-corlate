@@ -14,7 +14,7 @@ module.exports = {
   output: {
     filename: '[name].js',
     path: path.join(__dirname, 'web/build'),
-    publicPath: '/web/build/'
+    publicPath: '/build/'
   },
   // plugins: [
   //   new webpack.HotModuleReplacementPlugin(),
@@ -40,11 +40,13 @@ module.exports = {
       },
       { test: /\.css$/, excludes: [/node_modules/], loader: "style!css" },
       { test: /bootstrap\/js\//, loader: 'imports?jQuery=jquery' },
+      
       { test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,   loader: "url?limit=10000&minetype=application/font-woff" },
       { test: /\.woff2(\?v=\d+\.\d+\.\d+)?$/,   loader: "url?limit=10000&minetype=application/font-woff" },
       { test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,    loader: "url?limit=10000&minetype=application/octet-stream" },
       { test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,    loader: "file" },
       { test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,    loader: "url?limit=10000&minetype=image/svg+xml" } 
+      
     ]    
   }
 }
