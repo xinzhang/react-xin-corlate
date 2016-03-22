@@ -10,7 +10,10 @@ module.exports = {
   //     './src/main.jsx'
   //   ]
   // },
-  entry: ['./src/main.jsx'],
+  entry: {
+       vendor: ['./src/vendor.jsx'],
+       main: ['./src/main.jsx']
+  },    
   output: {
     filename: '[name].js',
     path: path.join(__dirname, 'web/build'),
