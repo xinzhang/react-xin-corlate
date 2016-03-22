@@ -11,7 +11,7 @@ class Slider extends React.Component {
 
 		return(
 		    <div id="main-slider" className="no-margin" >
-		        <div className="carousel slide" data-ride="carousel" data-interval="2000">
+		        <div className="carousel slide" data-ride="carousel" data-interval="5000">
 		            <ol className="carousel-indicators">
 		                <li data-target="#main-slider" data-slide-to="0" className="active"></li>
 		                <li data-target="#main-slider" data-slide-to="1"></li>
