@@ -65,29 +65,38 @@
 
 	__webpack_require__(168);
 
-	var _button = __webpack_require__(176);
+	__webpack_require__(176);
+
+	__webpack_require__(178);
+
+	__webpack_require__(212);
+
+	__webpack_require__(220);
+
+	var _button = __webpack_require__(222);
 
 	var _button2 = _interopRequireDefault(_button);
 
-	var _carousel = __webpack_require__(177);
+	var _carousel = __webpack_require__(223);
 
 	var _carousel2 = _interopRequireDefault(_carousel);
+
+	var _header = __webpack_require__(224);
+
+	var _header2 = _interopRequireDefault(_header);
+
+	var _slider = __webpack_require__(227);
+
+	var _slider2 = _interopRequireDefault(_slider);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var rootInstance = (0, _reactDom.render)(_react2.default.createElement(
 		'div',
 		null,
-		_react2.default.createElement(_button2.default, { name: 'light bulb' }),
-		'test font - awesome ',
-		_react2.default.createElement(
-			'span',
-			{ className: 'fa fa-repeat' },
-			'abc'
-		),
-		_react2.default.createElement(_carousel2.default, null)
+		_react2.default.createElement(_header2.default, null),
+		_react2.default.createElement(_slider2.default, null)
 	), document.getElementById('main'));
-	//import '../web/css/font-awesome.min.css';
 
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\Projects2012\\react-xin-corlate\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "main.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
@@ -20146,6 +20155,394 @@
 /* 176 */
 /***/ function(module, exports, __webpack_require__) {
 
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(177);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(167)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./animate.min.css", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./animate.min.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 177 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(162)();
+	// imports
+
+
+	// module
+	exports.push([module.id, "@charset \"UTF-8\";/*!\nAnimate.css - http://daneden.me/animate\nLicensed under the MIT license\n\nCopyright (c) 2013 Daniel Eden\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n*/.animated{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both}.animated.infinite{-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite}.animated.hinge{-webkit-animation-duration:2s;animation-duration:2s}@-webkit-keyframes bounce{0%,100%,20%,50%,80%{-webkit-transform:translateY(0);transform:translateY(0)}40%{-webkit-transform:translateY(-30px);transform:translateY(-30px)}60%{-webkit-transform:translateY(-15px);transform:translateY(-15px)}}@keyframes bounce{0%,100%,20%,50%,80%{-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0)}40%{-webkit-transform:translateY(-30px);-ms-transform:translateY(-30px);transform:translateY(-30px)}60%{-webkit-transform:translateY(-15px);-ms-transform:translateY(-15px);transform:translateY(-15px)}}.bounce{-webkit-animation-name:bounce;animation-name:bounce}@-webkit-keyframes flash{0%,100%,50%{opacity:1}25%,75%{opacity:0}}@keyframes flash{0%,100%,50%{opacity:1}25%,75%{opacity:0}}.flash{-webkit-animation-name:flash;animation-name:flash}@-webkit-keyframes pulse{0%{-webkit-transform:scale(1);transform:scale(1)}50%{-webkit-transform:scale(1.1);transform:scale(1.1)}100%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes pulse{0%{-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1)}50%{-webkit-transform:scale(1.1);-ms-transform:scale(1.1);transform:scale(1.1)}100%{-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1)}}.pulse{-webkit-animation-name:pulse;animation-name:pulse}@-webkit-keyframes rubberBand{0%{-webkit-transform:scale(1);transform:scale(1)}30%{-webkit-transform:scaleX(1.25) scaleY(0.75);transform:scaleX(1.25) scaleY(0.75)}40%{-webkit-transform:scaleX(0.75) scaleY(1.25);transform:scaleX(0.75) scaleY(1.25)}60%{-webkit-transform:scaleX(1.15) scaleY(0.85);transform:scaleX(1.15) scaleY(0.85)}100%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes rubberBand{0%{-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1)}30%{-webkit-transform:scaleX(1.25) scaleY(0.75);-ms-transform:scaleX(1.25) scaleY(0.75);transform:scaleX(1.25) scaleY(0.75)}40%{-webkit-transform:scaleX(0.75) scaleY(1.25);-ms-transform:scaleX(0.75) scaleY(1.25);transform:scaleX(0.75) scaleY(1.25)}60%{-webkit-transform:scaleX(1.15) scaleY(0.85);-ms-transform:scaleX(1.15) scaleY(0.85);transform:scaleX(1.15) scaleY(0.85)}100%{-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1)}}.rubberBand{-webkit-animation-name:rubberBand;animation-name:rubberBand}@-webkit-keyframes shake{0%,100%{-webkit-transform:translateX(0);transform:translateX(0)}10%,30%,50%,70%,90%{-webkit-transform:translateX(-10px);transform:translateX(-10px)}20%,40%,60%,80%{-webkit-transform:translateX(10px);transform:translateX(10px)}}@keyframes shake{0%,100%{-webkit-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0)}10%,30%,50%,70%,90%{-webkit-transform:translateX(-10px);-ms-transform:translateX(-10px);transform:translateX(-10px)}20%,40%,60%,80%{-webkit-transform:translateX(10px);-ms-transform:translateX(10px);transform:translateX(10px)}}.shake{-webkit-animation-name:shake;animation-name:shake}@-webkit-keyframes swing{20%{-webkit-transform:rotate(15deg);transform:rotate(15deg)}40%{-webkit-transform:rotate(-10deg);transform:rotate(-10deg)}60%{-webkit-transform:rotate(5deg);transform:rotate(5deg)}80%{-webkit-transform:rotate(-5deg);transform:rotate(-5deg)}100%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}}@keyframes swing{20%{-webkit-transform:rotate(15deg);-ms-transform:rotate(15deg);transform:rotate(15deg)}40%{-webkit-transform:rotate(-10deg);-ms-transform:rotate(-10deg);transform:rotate(-10deg)}60%{-webkit-transform:rotate(5deg);-ms-transform:rotate(5deg);transform:rotate(5deg)}80%{-webkit-transform:rotate(-5deg);-ms-transform:rotate(-5deg);transform:rotate(-5deg)}100%{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg)}}.swing{-webkit-transform-origin:top center;-ms-transform-origin:top center;transform-origin:top center;-webkit-animation-name:swing;animation-name:swing}@-webkit-keyframes tada{0%{-webkit-transform:scale(1);transform:scale(1)}10%,20%{-webkit-transform:scale(0.9) rotate(-3deg);transform:scale(0.9) rotate(-3deg)}30%,50%,70%,90%{-webkit-transform:scale(1.1) rotate(3deg);transform:scale(1.1) rotate(3deg)}40%,60%,80%{-webkit-transform:scale(1.1) rotate(-3deg);transform:scale(1.1) rotate(-3deg)}100%{-webkit-transform:scale(1) rotate(0);transform:scale(1) rotate(0)}}@keyframes tada{0%{-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1)}10%,20%{-webkit-transform:scale(0.9) rotate(-3deg);-ms-transform:scale(0.9) rotate(-3deg);transform:scale(0.9) rotate(-3deg)}30%,50%,70%,90%{-webkit-transform:scale(1.1) rotate(3deg);-ms-transform:scale(1.1) rotate(3deg);transform:scale(1.1) rotate(3deg)}40%,60%,80%{-webkit-transform:scale(1.1) rotate(-3deg);-ms-transform:scale(1.1) rotate(-3deg);transform:scale(1.1) rotate(-3deg)}100%{-webkit-transform:scale(1) rotate(0);-ms-transform:scale(1) rotate(0);transform:scale(1) rotate(0)}}.tada{-webkit-animation-name:tada;animation-name:tada}@-webkit-keyframes wobble{0%{-webkit-transform:translateX(0%);transform:translateX(0%)}15%{-webkit-transform:translateX(-25%) rotate(-5deg);transform:translateX(-25%) rotate(-5deg)}30%{-webkit-transform:translateX(20%) rotate(3deg);transform:translateX(20%) rotate(3deg)}45%{-webkit-transform:translateX(-15%) rotate(-3deg);transform:translateX(-15%) rotate(-3deg)}60%{-webkit-transform:translateX(10%) rotate(2deg);transform:translateX(10%) rotate(2deg)}75%{-webkit-transform:translateX(-5%) rotate(-1deg);transform:translateX(-5%) rotate(-1deg)}100%{-webkit-transform:translateX(0%);transform:translateX(0%)}}@keyframes wobble{0%{-webkit-transform:translateX(0%);-ms-transform:translateX(0%);transform:translateX(0%)}15%{-webkit-transform:translateX(-25%) rotate(-5deg);-ms-transform:translateX(-25%) rotate(-5deg);transform:translateX(-25%) rotate(-5deg)}30%{-webkit-transform:translateX(20%) rotate(3deg);-ms-transform:translateX(20%) rotate(3deg);transform:translateX(20%) rotate(3deg)}45%{-webkit-transform:translateX(-15%) rotate(-3deg);-ms-transform:translateX(-15%) rotate(-3deg);transform:translateX(-15%) rotate(-3deg)}60%{-webkit-transform:translateX(10%) rotate(2deg);-ms-transform:translateX(10%) rotate(2deg);transform:translateX(10%) rotate(2deg)}75%{-webkit-transform:translateX(-5%) rotate(-1deg);-ms-transform:translateX(-5%) rotate(-1deg);transform:translateX(-5%) rotate(-1deg)}100%{-webkit-transform:translateX(0%);-ms-transform:translateX(0%);transform:translateX(0%)}}.wobble{-webkit-animation-name:wobble;animation-name:wobble}@-webkit-keyframes bounceIn{0%{opacity:0;-webkit-transform:scale(.3);transform:scale(.3)}50%{opacity:1;-webkit-transform:scale(1.05);transform:scale(1.05)}70%{-webkit-transform:scale(.9);transform:scale(.9)}100%{opacity:1;-webkit-transform:scale(1);transform:scale(1)}}@keyframes bounceIn{0%{opacity:0;-webkit-transform:scale(.3);-ms-transform:scale(.3);transform:scale(.3)}50%{opacity:1;-webkit-transform:scale(1.05);-ms-transform:scale(1.05);transform:scale(1.05)}70%{-webkit-transform:scale(.9);-ms-transform:scale(.9);transform:scale(.9)}100%{opacity:1;-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1)}}.bounceIn{-webkit-animation-name:bounceIn;animation-name:bounceIn}@-webkit-keyframes bounceInDown{0%{opacity:0;-webkit-transform:translateY(-2000px);transform:translateY(-2000px)}60%{opacity:1;-webkit-transform:translateY(30px);transform:translateY(30px)}80%{-webkit-transform:translateY(-10px);transform:translateY(-10px)}100%{-webkit-transform:translateY(0);transform:translateY(0)}}@keyframes bounceInDown{0%{opacity:0;-webkit-transform:translateY(-2000px);-ms-transform:translateY(-2000px);transform:translateY(-2000px)}60%{opacity:1;-webkit-transform:translateY(30px);-ms-transform:translateY(30px);transform:translateY(30px)}80%{-webkit-transform:translateY(-10px);-ms-transform:translateY(-10px);transform:translateY(-10px)}100%{-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0)}}.bounceInDown{-webkit-animation-name:bounceInDown;animation-name:bounceInDown}@-webkit-keyframes bounceInLeft{0%{opacity:0;-webkit-transform:translateX(-2000px);transform:translateX(-2000px)}60%{opacity:1;-webkit-transform:translateX(30px);transform:translateX(30px)}80%{-webkit-transform:translateX(-10px);transform:translateX(-10px)}100%{-webkit-transform:translateX(0);transform:translateX(0)}}@keyframes bounceInLeft{0%{opacity:0;-webkit-transform:translateX(-2000px);-ms-transform:translateX(-2000px);transform:translateX(-2000px)}60%{opacity:1;-webkit-transform:translateX(30px);-ms-transform:translateX(30px);transform:translateX(30px)}80%{-webkit-transform:translateX(-10px);-ms-transform:translateX(-10px);transform:translateX(-10px)}100%{-webkit-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0)}}.bounceInLeft{-webkit-animation-name:bounceInLeft;animation-name:bounceInLeft}@-webkit-keyframes bounceInRight{0%{opacity:0;-webkit-transform:translateX(2000px);transform:translateX(2000px)}60%{opacity:1;-webkit-transform:translateX(-30px);transform:translateX(-30px)}80%{-webkit-transform:translateX(10px);transform:translateX(10px)}100%{-webkit-transform:translateX(0);transform:translateX(0)}}@keyframes bounceInRight{0%{opacity:0;-webkit-transform:translateX(2000px);-ms-transform:translateX(2000px);transform:translateX(2000px)}60%{opacity:1;-webkit-transform:translateX(-30px);-ms-transform:translateX(-30px);transform:translateX(-30px)}80%{-webkit-transform:translateX(10px);-ms-transform:translateX(10px);transform:translateX(10px)}100%{-webkit-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0)}}.bounceInRight{-webkit-animation-name:bounceInRight;animation-name:bounceInRight}@-webkit-keyframes bounceInUp{0%{opacity:0;-webkit-transform:translateY(2000px);transform:translateY(2000px)}60%{opacity:1;-webkit-transform:translateY(-30px);transform:translateY(-30px)}80%{-webkit-transform:translateY(10px);transform:translateY(10px)}100%{-webkit-transform:translateY(0);transform:translateY(0)}}@keyframes bounceInUp{0%{opacity:0;-webkit-transform:translateY(2000px);-ms-transform:translateY(2000px);transform:translateY(2000px)}60%{opacity:1;-webkit-transform:translateY(-30px);-ms-transform:translateY(-30px);transform:translateY(-30px)}80%{-webkit-transform:translateY(10px);-ms-transform:translateY(10px);transform:translateY(10px)}100%{-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0)}}.bounceInUp{-webkit-animation-name:bounceInUp;animation-name:bounceInUp}@-webkit-keyframes bounceOut{0%{-webkit-transform:scale(1);transform:scale(1)}25%{-webkit-transform:scale(.95);transform:scale(.95)}50%{opacity:1;-webkit-transform:scale(1.1);transform:scale(1.1)}100%{opacity:0;-webkit-transform:scale(.3);transform:scale(.3)}}@keyframes bounceOut{0%{-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1)}25%{-webkit-transform:scale(.95);-ms-transform:scale(.95);transform:scale(.95)}50%{opacity:1;-webkit-transform:scale(1.1);-ms-transform:scale(1.1);transform:scale(1.1)}100%{opacity:0;-webkit-transform:scale(.3);-ms-transform:scale(.3);transform:scale(.3)}}.bounceOut{-webkit-animation-name:bounceOut;animation-name:bounceOut}@-webkit-keyframes bounceOutDown{0%{-webkit-transform:translateY(0);transform:translateY(0)}20%{opacity:1;-webkit-transform:translateY(-20px);transform:translateY(-20px)}100%{opacity:0;-webkit-transform:translateY(2000px);transform:translateY(2000px)}}@keyframes bounceOutDown{0%{-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0)}20%{opacity:1;-webkit-transform:translateY(-20px);-ms-transform:translateY(-20px);transform:translateY(-20px)}100%{opacity:0;-webkit-transform:translateY(2000px);-ms-transform:translateY(2000px);transform:translateY(2000px)}}.bounceOutDown{-webkit-animation-name:bounceOutDown;animation-name:bounceOutDown}@-webkit-keyframes bounceOutLeft{0%{-webkit-transform:translateX(0);transform:translateX(0)}20%{opacity:1;-webkit-transform:translateX(20px);transform:translateX(20px)}100%{opacity:0;-webkit-transform:translateX(-2000px);transform:translateX(-2000px)}}@keyframes bounceOutLeft{0%{-webkit-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0)}20%{opacity:1;-webkit-transform:translateX(20px);-ms-transform:translateX(20px);transform:translateX(20px)}100%{opacity:0;-webkit-transform:translateX(-2000px);-ms-transform:translateX(-2000px);transform:translateX(-2000px)}}.bounceOutLeft{-webkit-animation-name:bounceOutLeft;animation-name:bounceOutLeft}@-webkit-keyframes bounceOutRight{0%{-webkit-transform:translateX(0);transform:translateX(0)}20%{opacity:1;-webkit-transform:translateX(-20px);transform:translateX(-20px)}100%{opacity:0;-webkit-transform:translateX(2000px);transform:translateX(2000px)}}@keyframes bounceOutRight{0%{-webkit-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0)}20%{opacity:1;-webkit-transform:translateX(-20px);-ms-transform:translateX(-20px);transform:translateX(-20px)}100%{opacity:0;-webkit-transform:translateX(2000px);-ms-transform:translateX(2000px);transform:translateX(2000px)}}.bounceOutRight{-webkit-animation-name:bounceOutRight;animation-name:bounceOutRight}@-webkit-keyframes bounceOutUp{0%{-webkit-transform:translateY(0);transform:translateY(0)}20%{opacity:1;-webkit-transform:translateY(20px);transform:translateY(20px)}100%{opacity:0;-webkit-transform:translateY(-2000px);transform:translateY(-2000px)}}@keyframes bounceOutUp{0%{-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0)}20%{opacity:1;-webkit-transform:translateY(20px);-ms-transform:translateY(20px);transform:translateY(20px)}100%{opacity:0;-webkit-transform:translateY(-2000px);-ms-transform:translateY(-2000px);transform:translateY(-2000px)}}.bounceOutUp{-webkit-animation-name:bounceOutUp;animation-name:bounceOutUp}@-webkit-keyframes fadeIn{0%{opacity:0}100%{opacity:1}}@keyframes fadeIn{0%{opacity:0}100%{opacity:1}}.fadeIn{-webkit-animation-name:fadeIn;animation-name:fadeIn}@-webkit-keyframes fadeInDown{0%{opacity:0;-webkit-transform:translateY(-20px);transform:translateY(-20px)}100%{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}}@keyframes fadeInDown{0%{opacity:0;-webkit-transform:translateY(-20px);-ms-transform:translateY(-20px);transform:translateY(-20px)}100%{opacity:1;-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0)}}.fadeInDown{-webkit-animation-name:fadeInDown;animation-name:fadeInDown}@-webkit-keyframes fadeInDownBig{0%{opacity:0;-webkit-transform:translateY(-2000px);transform:translateY(-2000px)}100%{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}}@keyframes fadeInDownBig{0%{opacity:0;-webkit-transform:translateY(-2000px);-ms-transform:translateY(-2000px);transform:translateY(-2000px)}100%{opacity:1;-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0)}}.fadeInDownBig{-webkit-animation-name:fadeInDownBig;animation-name:fadeInDownBig}@-webkit-keyframes fadeInLeft{0%{opacity:0;-webkit-transform:translateX(-20px);transform:translateX(-20px)}100%{opacity:1;-webkit-transform:translateX(0);transform:translateX(0)}}@keyframes fadeInLeft{0%{opacity:0;-webkit-transform:translateX(-20px);-ms-transform:translateX(-20px);transform:translateX(-20px)}100%{opacity:1;-webkit-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0)}}.fadeInLeft{-webkit-animation-name:fadeInLeft;animation-name:fadeInLeft}@-webkit-keyframes fadeInLeftBig{0%{opacity:0;-webkit-transform:translateX(-2000px);transform:translateX(-2000px)}100%{opacity:1;-webkit-transform:translateX(0);transform:translateX(0)}}@keyframes fadeInLeftBig{0%{opacity:0;-webkit-transform:translateX(-2000px);-ms-transform:translateX(-2000px);transform:translateX(-2000px)}100%{opacity:1;-webkit-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0)}}.fadeInLeftBig{-webkit-animation-name:fadeInLeftBig;animation-name:fadeInLeftBig}@-webkit-keyframes fadeInRight{0%{opacity:0;-webkit-transform:translateX(20px);transform:translateX(20px)}100%{opacity:1;-webkit-transform:translateX(0);transform:translateX(0)}}@keyframes fadeInRight{0%{opacity:0;-webkit-transform:translateX(20px);-ms-transform:translateX(20px);transform:translateX(20px)}100%{opacity:1;-webkit-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0)}}.fadeInRight{-webkit-animation-name:fadeInRight;animation-name:fadeInRight}@-webkit-keyframes fadeInRightBig{0%{opacity:0;-webkit-transform:translateX(2000px);transform:translateX(2000px)}100%{opacity:1;-webkit-transform:translateX(0);transform:translateX(0)}}@keyframes fadeInRightBig{0%{opacity:0;-webkit-transform:translateX(2000px);-ms-transform:translateX(2000px);transform:translateX(2000px)}100%{opacity:1;-webkit-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0)}}.fadeInRightBig{-webkit-animation-name:fadeInRightBig;animation-name:fadeInRightBig}@-webkit-keyframes fadeInUp{0%{opacity:0;-webkit-transform:translateY(20px);transform:translateY(20px)}100%{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}}@keyframes fadeInUp{0%{opacity:0;-webkit-transform:translateY(20px);-ms-transform:translateY(20px);transform:translateY(20px)}100%{opacity:1;-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0)}}.fadeInUp{-webkit-animation-name:fadeInUp;animation-name:fadeInUp}@-webkit-keyframes fadeInUpBig{0%{opacity:0;-webkit-transform:translateY(2000px);transform:translateY(2000px)}100%{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}}@keyframes fadeInUpBig{0%{opacity:0;-webkit-transform:translateY(2000px);-ms-transform:translateY(2000px);transform:translateY(2000px)}100%{opacity:1;-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0)}}.fadeInUpBig{-webkit-animation-name:fadeInUpBig;animation-name:fadeInUpBig}@-webkit-keyframes fadeOut{0%{opacity:1}100%{opacity:0}}@keyframes fadeOut{0%{opacity:1}100%{opacity:0}}.fadeOut{-webkit-animation-name:fadeOut;animation-name:fadeOut}@-webkit-keyframes fadeOutDown{0%{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}100%{opacity:0;-webkit-transform:translateY(20px);transform:translateY(20px)}}@keyframes fadeOutDown{0%{opacity:1;-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0)}100%{opacity:0;-webkit-transform:translateY(20px);-ms-transform:translateY(20px);transform:translateY(20px)}}.fadeOutDown{-webkit-animation-name:fadeOutDown;animation-name:fadeOutDown}@-webkit-keyframes fadeOutDownBig{0%{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}100%{opacity:0;-webkit-transform:translateY(2000px);transform:translateY(2000px)}}@keyframes fadeOutDownBig{0%{opacity:1;-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0)}100%{opacity:0;-webkit-transform:translateY(2000px);-ms-transform:translateY(2000px);transform:translateY(2000px)}}.fadeOutDownBig{-webkit-animation-name:fadeOutDownBig;animation-name:fadeOutDownBig}@-webkit-keyframes fadeOutLeft{0%{opacity:1;-webkit-transform:translateX(0);transform:translateX(0)}100%{opacity:0;-webkit-transform:translateX(-20px);transform:translateX(-20px)}}@keyframes fadeOutLeft{0%{opacity:1;-webkit-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0)}100%{opacity:0;-webkit-transform:translateX(-20px);-ms-transform:translateX(-20px);transform:translateX(-20px)}}.fadeOutLeft{-webkit-animation-name:fadeOutLeft;animation-name:fadeOutLeft}@-webkit-keyframes fadeOutLeftBig{0%{opacity:1;-webkit-transform:translateX(0);transform:translateX(0)}100%{opacity:0;-webkit-transform:translateX(-2000px);transform:translateX(-2000px)}}@keyframes fadeOutLeftBig{0%{opacity:1;-webkit-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0)}100%{opacity:0;-webkit-transform:translateX(-2000px);-ms-transform:translateX(-2000px);transform:translateX(-2000px)}}.fadeOutLeftBig{-webkit-animation-name:fadeOutLeftBig;animation-name:fadeOutLeftBig}@-webkit-keyframes fadeOutRight{0%{opacity:1;-webkit-transform:translateX(0);transform:translateX(0)}100%{opacity:0;-webkit-transform:translateX(20px);transform:translateX(20px)}}@keyframes fadeOutRight{0%{opacity:1;-webkit-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0)}100%{opacity:0;-webkit-transform:translateX(20px);-ms-transform:translateX(20px);transform:translateX(20px)}}.fadeOutRight{-webkit-animation-name:fadeOutRight;animation-name:fadeOutRight}@-webkit-keyframes fadeOutRightBig{0%{opacity:1;-webkit-transform:translateX(0);transform:translateX(0)}100%{opacity:0;-webkit-transform:translateX(2000px);transform:translateX(2000px)}}@keyframes fadeOutRightBig{0%{opacity:1;-webkit-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0)}100%{opacity:0;-webkit-transform:translateX(2000px);-ms-transform:translateX(2000px);transform:translateX(2000px)}}.fadeOutRightBig{-webkit-animation-name:fadeOutRightBig;animation-name:fadeOutRightBig}@-webkit-keyframes fadeOutUp{0%{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}100%{opacity:0;-webkit-transform:translateY(-20px);transform:translateY(-20px)}}@keyframes fadeOutUp{0%{opacity:1;-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0)}100%{opacity:0;-webkit-transform:translateY(-20px);-ms-transform:translateY(-20px);transform:translateY(-20px)}}.fadeOutUp{-webkit-animation-name:fadeOutUp;animation-name:fadeOutUp}@-webkit-keyframes fadeOutUpBig{0%{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}100%{opacity:0;-webkit-transform:translateY(-2000px);transform:translateY(-2000px)}}@keyframes fadeOutUpBig{0%{opacity:1;-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0)}100%{opacity:0;-webkit-transform:translateY(-2000px);-ms-transform:translateY(-2000px);transform:translateY(-2000px)}}.fadeOutUpBig{-webkit-animation-name:fadeOutUpBig;animation-name:fadeOutUpBig}@-webkit-keyframes flip{0%{-webkit-transform:perspective(400px) translateZ(0) rotateY(0) scale(1);transform:perspective(400px) translateZ(0) rotateY(0) scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}40%{-webkit-transform:perspective(400px) translateZ(150px) rotateY(170deg) scale(1);transform:perspective(400px) translateZ(150px) rotateY(170deg) scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}50%{-webkit-transform:perspective(400px) translateZ(150px) rotateY(190deg) scale(1);transform:perspective(400px) translateZ(150px) rotateY(190deg) scale(1);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}80%{-webkit-transform:perspective(400px) translateZ(0) rotateY(360deg) scale(.95);transform:perspective(400px) translateZ(0) rotateY(360deg) scale(.95);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}100%{-webkit-transform:perspective(400px) translateZ(0) rotateY(360deg) scale(1);transform:perspective(400px) translateZ(0) rotateY(360deg) scale(1);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}}@keyframes flip{0%{-webkit-transform:perspective(400px) translateZ(0) rotateY(0) scale(1);-ms-transform:perspective(400px) translateZ(0) rotateY(0) scale(1);transform:perspective(400px) translateZ(0) rotateY(0) scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}40%{-webkit-transform:perspective(400px) translateZ(150px) rotateY(170deg) scale(1);-ms-transform:perspective(400px) translateZ(150px) rotateY(170deg) scale(1);transform:perspective(400px) translateZ(150px) rotateY(170deg) scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}50%{-webkit-transform:perspective(400px) translateZ(150px) rotateY(190deg) scale(1);-ms-transform:perspective(400px) translateZ(150px) rotateY(190deg) scale(1);transform:perspective(400px) translateZ(150px) rotateY(190deg) scale(1);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}80%{-webkit-transform:perspective(400px) translateZ(0) rotateY(360deg) scale(.95);-ms-transform:perspective(400px) translateZ(0) rotateY(360deg) scale(.95);transform:perspective(400px) translateZ(0) rotateY(360deg) scale(.95);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}100%{-webkit-transform:perspective(400px) translateZ(0) rotateY(360deg) scale(1);-ms-transform:perspective(400px) translateZ(0) rotateY(360deg) scale(1);transform:perspective(400px) translateZ(0) rotateY(360deg) scale(1);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}}.animated.flip{-webkit-backface-visibility:visible;-ms-backface-visibility:visible;backface-visibility:visible;-webkit-animation-name:flip;animation-name:flip}@-webkit-keyframes flipInX{0%{-webkit-transform:perspective(400px) rotateX(90deg);transform:perspective(400px) rotateX(90deg);opacity:0}40%{-webkit-transform:perspective(400px) rotateX(-10deg);transform:perspective(400px) rotateX(-10deg)}70%{-webkit-transform:perspective(400px) rotateX(10deg);transform:perspective(400px) rotateX(10deg)}100%{-webkit-transform:perspective(400px) rotateX(0deg);transform:perspective(400px) rotateX(0deg);opacity:1}}@keyframes flipInX{0%{-webkit-transform:perspective(400px) rotateX(90deg);-ms-transform:perspective(400px) rotateX(90deg);transform:perspective(400px) rotateX(90deg);opacity:0}40%{-webkit-transform:perspective(400px) rotateX(-10deg);-ms-transform:perspective(400px) rotateX(-10deg);transform:perspective(400px) rotateX(-10deg)}70%{-webkit-transform:perspective(400px) rotateX(10deg);-ms-transform:perspective(400px) rotateX(10deg);transform:perspective(400px) rotateX(10deg)}100%{-webkit-transform:perspective(400px) rotateX(0deg);-ms-transform:perspective(400px) rotateX(0deg);transform:perspective(400px) rotateX(0deg);opacity:1}}.flipInX{-webkit-backface-visibility:visible!important;-ms-backface-visibility:visible!important;backface-visibility:visible!important;-webkit-animation-name:flipInX;animation-name:flipInX}@-webkit-keyframes flipInY{0%{-webkit-transform:perspective(400px) rotateY(90deg);transform:perspective(400px) rotateY(90deg);opacity:0}40%{-webkit-transform:perspective(400px) rotateY(-10deg);transform:perspective(400px) rotateY(-10deg)}70%{-webkit-transform:perspective(400px) rotateY(10deg);transform:perspective(400px) rotateY(10deg)}100%{-webkit-transform:perspective(400px) rotateY(0deg);transform:perspective(400px) rotateY(0deg);opacity:1}}@keyframes flipInY{0%{-webkit-transform:perspective(400px) rotateY(90deg);-ms-transform:perspective(400px) rotateY(90deg);transform:perspective(400px) rotateY(90deg);opacity:0}40%{-webkit-transform:perspective(400px) rotateY(-10deg);-ms-transform:perspective(400px) rotateY(-10deg);transform:perspective(400px) rotateY(-10deg)}70%{-webkit-transform:perspective(400px) rotateY(10deg);-ms-transform:perspective(400px) rotateY(10deg);transform:perspective(400px) rotateY(10deg)}100%{-webkit-transform:perspective(400px) rotateY(0deg);-ms-transform:perspective(400px) rotateY(0deg);transform:perspective(400px) rotateY(0deg);opacity:1}}.flipInY{-webkit-backface-visibility:visible!important;-ms-backface-visibility:visible!important;backface-visibility:visible!important;-webkit-animation-name:flipInY;animation-name:flipInY}@-webkit-keyframes flipOutX{0%{-webkit-transform:perspective(400px) rotateX(0deg);transform:perspective(400px) rotateX(0deg);opacity:1}100%{-webkit-transform:perspective(400px) rotateX(90deg);transform:perspective(400px) rotateX(90deg);opacity:0}}@keyframes flipOutX{0%{-webkit-transform:perspective(400px) rotateX(0deg);-ms-transform:perspective(400px) rotateX(0deg);transform:perspective(400px) rotateX(0deg);opacity:1}100%{-webkit-transform:perspective(400px) rotateX(90deg);-ms-transform:perspective(400px) rotateX(90deg);transform:perspective(400px) rotateX(90deg);opacity:0}}.flipOutX{-webkit-animation-name:flipOutX;animation-name:flipOutX;-webkit-backface-visibility:visible!important;-ms-backface-visibility:visible!important;backface-visibility:visible!important}@-webkit-keyframes flipOutY{0%{-webkit-transform:perspective(400px) rotateY(0deg);transform:perspective(400px) rotateY(0deg);opacity:1}100%{-webkit-transform:perspective(400px) rotateY(90deg);transform:perspective(400px) rotateY(90deg);opacity:0}}@keyframes flipOutY{0%{-webkit-transform:perspective(400px) rotateY(0deg);-ms-transform:perspective(400px) rotateY(0deg);transform:perspective(400px) rotateY(0deg);opacity:1}100%{-webkit-transform:perspective(400px) rotateY(90deg);-ms-transform:perspective(400px) rotateY(90deg);transform:perspective(400px) rotateY(90deg);opacity:0}}.flipOutY{-webkit-backface-visibility:visible!important;-ms-backface-visibility:visible!important;backface-visibility:visible!important;-webkit-animation-name:flipOutY;animation-name:flipOutY}@-webkit-keyframes lightSpeedIn{0%{-webkit-transform:translateX(100%) skewX(-30deg);transform:translateX(100%) skewX(-30deg);opacity:0}60%{-webkit-transform:translateX(-20%) skewX(30deg);transform:translateX(-20%) skewX(30deg);opacity:1}80%{-webkit-transform:translateX(0%) skewX(-15deg);transform:translateX(0%) skewX(-15deg);opacity:1}100%{-webkit-transform:translateX(0%) skewX(0deg);transform:translateX(0%) skewX(0deg);opacity:1}}@keyframes lightSpeedIn{0%{-webkit-transform:translateX(100%) skewX(-30deg);-ms-transform:translateX(100%) skewX(-30deg);transform:translateX(100%) skewX(-30deg);opacity:0}60%{-webkit-transform:translateX(-20%) skewX(30deg);-ms-transform:translateX(-20%) skewX(30deg);transform:translateX(-20%) skewX(30deg);opacity:1}80%{-webkit-transform:translateX(0%) skewX(-15deg);-ms-transform:translateX(0%) skewX(-15deg);transform:translateX(0%) skewX(-15deg);opacity:1}100%{-webkit-transform:translateX(0%) skewX(0deg);-ms-transform:translateX(0%) skewX(0deg);transform:translateX(0%) skewX(0deg);opacity:1}}.lightSpeedIn{-webkit-animation-name:lightSpeedIn;animation-name:lightSpeedIn;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}@-webkit-keyframes lightSpeedOut{0%{-webkit-transform:translateX(0%) skewX(0deg);transform:translateX(0%) skewX(0deg);opacity:1}100%{-webkit-transform:translateX(100%) skewX(-30deg);transform:translateX(100%) skewX(-30deg);opacity:0}}@keyframes lightSpeedOut{0%{-webkit-transform:translateX(0%) skewX(0deg);-ms-transform:translateX(0%) skewX(0deg);transform:translateX(0%) skewX(0deg);opacity:1}100%{-webkit-transform:translateX(100%) skewX(-30deg);-ms-transform:translateX(100%) skewX(-30deg);transform:translateX(100%) skewX(-30deg);opacity:0}}.lightSpeedOut{-webkit-animation-name:lightSpeedOut;animation-name:lightSpeedOut;-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}@-webkit-keyframes rotateIn{0%{-webkit-transform-origin:center center;transform-origin:center center;-webkit-transform:rotate(-200deg);transform:rotate(-200deg);opacity:0}100%{-webkit-transform-origin:center center;transform-origin:center center;-webkit-transform:rotate(0);transform:rotate(0);opacity:1}}@keyframes rotateIn{0%{-webkit-transform-origin:center center;-ms-transform-origin:center center;transform-origin:center center;-webkit-transform:rotate(-200deg);-ms-transform:rotate(-200deg);transform:rotate(-200deg);opacity:0}100%{-webkit-transform-origin:center center;-ms-transform-origin:center center;transform-origin:center center;-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0);opacity:1}}.rotateIn{-webkit-animation-name:rotateIn;animation-name:rotateIn}@-webkit-keyframes rotateInDownLeft{0%{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate(-90deg);transform:rotate(-90deg);opacity:0}100%{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate(0);transform:rotate(0);opacity:1}}@keyframes rotateInDownLeft{0%{-webkit-transform-origin:left bottom;-ms-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate(-90deg);-ms-transform:rotate(-90deg);transform:rotate(-90deg);opacity:0}100%{-webkit-transform-origin:left bottom;-ms-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0);opacity:1}}.rotateInDownLeft{-webkit-animation-name:rotateInDownLeft;animation-name:rotateInDownLeft}@-webkit-keyframes rotateInDownRight{0%{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate(90deg);transform:rotate(90deg);opacity:0}100%{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate(0);transform:rotate(0);opacity:1}}@keyframes rotateInDownRight{0%{-webkit-transform-origin:right bottom;-ms-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate(90deg);-ms-transform:rotate(90deg);transform:rotate(90deg);opacity:0}100%{-webkit-transform-origin:right bottom;-ms-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0);opacity:1}}.rotateInDownRight{-webkit-animation-name:rotateInDownRight;animation-name:rotateInDownRight}@-webkit-keyframes rotateInUpLeft{0%{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate(90deg);transform:rotate(90deg);opacity:0}100%{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate(0);transform:rotate(0);opacity:1}}@keyframes rotateInUpLeft{0%{-webkit-transform-origin:left bottom;-ms-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate(90deg);-ms-transform:rotate(90deg);transform:rotate(90deg);opacity:0}100%{-webkit-transform-origin:left bottom;-ms-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0);opacity:1}}.rotateInUpLeft{-webkit-animation-name:rotateInUpLeft;animation-name:rotateInUpLeft}@-webkit-keyframes rotateInUpRight{0%{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate(-90deg);transform:rotate(-90deg);opacity:0}100%{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate(0);transform:rotate(0);opacity:1}}@keyframes rotateInUpRight{0%{-webkit-transform-origin:right bottom;-ms-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate(-90deg);-ms-transform:rotate(-90deg);transform:rotate(-90deg);opacity:0}100%{-webkit-transform-origin:right bottom;-ms-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0);opacity:1}}.rotateInUpRight{-webkit-animation-name:rotateInUpRight;animation-name:rotateInUpRight}@-webkit-keyframes rotateOut{0%{-webkit-transform-origin:center center;transform-origin:center center;-webkit-transform:rotate(0);transform:rotate(0);opacity:1}100%{-webkit-transform-origin:center center;transform-origin:center center;-webkit-transform:rotate(200deg);transform:rotate(200deg);opacity:0}}@keyframes rotateOut{0%{-webkit-transform-origin:center center;-ms-transform-origin:center center;transform-origin:center center;-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0);opacity:1}100%{-webkit-transform-origin:center center;-ms-transform-origin:center center;transform-origin:center center;-webkit-transform:rotate(200deg);-ms-transform:rotate(200deg);transform:rotate(200deg);opacity:0}}.rotateOut{-webkit-animation-name:rotateOut;animation-name:rotateOut}@-webkit-keyframes rotateOutDownLeft{0%{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate(0);transform:rotate(0);opacity:1}100%{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate(90deg);transform:rotate(90deg);opacity:0}}@keyframes rotateOutDownLeft{0%{-webkit-transform-origin:left bottom;-ms-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0);opacity:1}100%{-webkit-transform-origin:left bottom;-ms-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate(90deg);-ms-transform:rotate(90deg);transform:rotate(90deg);opacity:0}}.rotateOutDownLeft{-webkit-animation-name:rotateOutDownLeft;animation-name:rotateOutDownLeft}@-webkit-keyframes rotateOutDownRight{0%{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate(0);transform:rotate(0);opacity:1}100%{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate(-90deg);transform:rotate(-90deg);opacity:0}}@keyframes rotateOutDownRight{0%{-webkit-transform-origin:right bottom;-ms-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0);opacity:1}100%{-webkit-transform-origin:right bottom;-ms-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate(-90deg);-ms-transform:rotate(-90deg);transform:rotate(-90deg);opacity:0}}.rotateOutDownRight{-webkit-animation-name:rotateOutDownRight;animation-name:rotateOutDownRight}@-webkit-keyframes rotateOutUpLeft{0%{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate(0);transform:rotate(0);opacity:1}100%{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate(-90deg);transform:rotate(-90deg);opacity:0}}@keyframes rotateOutUpLeft{0%{-webkit-transform-origin:left bottom;-ms-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0);opacity:1}100%{-webkit-transform-origin:left bottom;-ms-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate(-90deg);-ms-transform:rotate(-90deg);transform:rotate(-90deg);opacity:0}}.rotateOutUpLeft{-webkit-animation-name:rotateOutUpLeft;animation-name:rotateOutUpLeft}@-webkit-keyframes rotateOutUpRight{0%{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate(0);transform:rotate(0);opacity:1}100%{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate(90deg);transform:rotate(90deg);opacity:0}}@keyframes rotateOutUpRight{0%{-webkit-transform-origin:right bottom;-ms-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0);opacity:1}100%{-webkit-transform-origin:right bottom;-ms-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate(90deg);-ms-transform:rotate(90deg);transform:rotate(90deg);opacity:0}}.rotateOutUpRight{-webkit-animation-name:rotateOutUpRight;animation-name:rotateOutUpRight}@-webkit-keyframes slideInDown{0%{opacity:0;-webkit-transform:translateY(-2000px);transform:translateY(-2000px)}100%{-webkit-transform:translateY(0);transform:translateY(0)}}@keyframes slideInDown{0%{opacity:0;-webkit-transform:translateY(-2000px);-ms-transform:translateY(-2000px);transform:translateY(-2000px)}100%{-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0)}}.slideInDown{-webkit-animation-name:slideInDown;animation-name:slideInDown}@-webkit-keyframes slideInLeft{0%{opacity:0;-webkit-transform:translateX(-2000px);transform:translateX(-2000px)}100%{-webkit-transform:translateX(0);transform:translateX(0)}}@keyframes slideInLeft{0%{opacity:0;-webkit-transform:translateX(-2000px);-ms-transform:translateX(-2000px);transform:translateX(-2000px)}100%{-webkit-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0)}}.slideInLeft{-webkit-animation-name:slideInLeft;animation-name:slideInLeft}@-webkit-keyframes slideInRight{0%{opacity:0;-webkit-transform:translateX(2000px);transform:translateX(2000px)}100%{-webkit-transform:translateX(0);transform:translateX(0)}}@keyframes slideInRight{0%{opacity:0;-webkit-transform:translateX(2000px);-ms-transform:translateX(2000px);transform:translateX(2000px)}100%{-webkit-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0)}}.slideInRight{-webkit-animation-name:slideInRight;animation-name:slideInRight}@-webkit-keyframes slideOutLeft{0%{-webkit-transform:translateX(0);transform:translateX(0)}100%{opacity:0;-webkit-transform:translateX(-2000px);transform:translateX(-2000px)}}@keyframes slideOutLeft{0%{-webkit-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0)}100%{opacity:0;-webkit-transform:translateX(-2000px);-ms-transform:translateX(-2000px);transform:translateX(-2000px)}}.slideOutLeft{-webkit-animation-name:slideOutLeft;animation-name:slideOutLeft}@-webkit-keyframes slideOutRight{0%{-webkit-transform:translateX(0);transform:translateX(0)}100%{opacity:0;-webkit-transform:translateX(2000px);transform:translateX(2000px)}}@keyframes slideOutRight{0%{-webkit-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0)}100%{opacity:0;-webkit-transform:translateX(2000px);-ms-transform:translateX(2000px);transform:translateX(2000px)}}.slideOutRight{-webkit-animation-name:slideOutRight;animation-name:slideOutRight}@-webkit-keyframes slideOutUp{0%{-webkit-transform:translateY(0);transform:translateY(0)}100%{opacity:0;-webkit-transform:translateY(-2000px);transform:translateY(-2000px)}}@keyframes slideOutUp{0%{-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0)}100%{opacity:0;-webkit-transform:translateY(-2000px);-ms-transform:translateY(-2000px);transform:translateY(-2000px)}}.slideOutUp{-webkit-animation-name:slideOutUp;animation-name:slideOutUp}@-webkit-keyframes slideInUp{0%{opacity:0;-webkit-transform:translateY(2000px);transform:translateY(2000px)}100%{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}}@keyframes slideInUp{0%{opacity:0;-webkit-transform:translateY(2000px);-ms-transform:translateY(2000px);transform:translateY(2000px)}100%{opacity:1;-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0)}}.slideInUp{-webkit-animation-name:slideInUp;animation-name:slideInUp}@-webkit-keyframes slideOutDown{0%{-webkit-transform:translateY(0);transform:translateY(0)}100%{opacity:0;-webkit-transform:translateY(2000px);transform:translateY(2000px)}}@keyframes slideOutDown{0%{-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0)}100%{opacity:0;-webkit-transform:translateY(2000px);-ms-transform:translateY(2000px);transform:translateY(2000px)}}.slideOutDown{-webkit-animation-name:slideOutDown;animation-name:slideOutDown}@-webkit-keyframes hinge{0%{-webkit-transform:rotate(0);transform:rotate(0);-webkit-transform-origin:top left;transform-origin:top left;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out}20%,60%{-webkit-transform:rotate(80deg);transform:rotate(80deg);-webkit-transform-origin:top left;transform-origin:top left;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out}40%{-webkit-transform:rotate(60deg);transform:rotate(60deg);-webkit-transform-origin:top left;transform-origin:top left;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out}80%{-webkit-transform:rotate(60deg) translateY(0);transform:rotate(60deg) translateY(0);-webkit-transform-origin:top left;transform-origin:top left;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out;opacity:1}100%{-webkit-transform:translateY(700px);transform:translateY(700px);opacity:0}}@keyframes hinge{0%{-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0);-webkit-transform-origin:top left;-ms-transform-origin:top left;transform-origin:top left;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out}20%,60%{-webkit-transform:rotate(80deg);-ms-transform:rotate(80deg);transform:rotate(80deg);-webkit-transform-origin:top left;-ms-transform-origin:top left;transform-origin:top left;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out}40%{-webkit-transform:rotate(60deg);-ms-transform:rotate(60deg);transform:rotate(60deg);-webkit-transform-origin:top left;-ms-transform-origin:top left;transform-origin:top left;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out}80%{-webkit-transform:rotate(60deg) translateY(0);-ms-transform:rotate(60deg) translateY(0);transform:rotate(60deg) translateY(0);-webkit-transform-origin:top left;-ms-transform-origin:top left;transform-origin:top left;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out;opacity:1}100%{-webkit-transform:translateY(700px);-ms-transform:translateY(700px);transform:translateY(700px);opacity:0}}.hinge{-webkit-animation-name:hinge;animation-name:hinge}@-webkit-keyframes rollIn{0%{opacity:0;-webkit-transform:translateX(-100%) rotate(-120deg);transform:translateX(-100%) rotate(-120deg)}100%{opacity:1;-webkit-transform:translateX(0px) rotate(0deg);transform:translateX(0px) rotate(0deg)}}@keyframes rollIn{0%{opacity:0;-webkit-transform:translateX(-100%) rotate(-120deg);-ms-transform:translateX(-100%) rotate(-120deg);transform:translateX(-100%) rotate(-120deg)}100%{opacity:1;-webkit-transform:translateX(0px) rotate(0deg);-ms-transform:translateX(0px) rotate(0deg);transform:translateX(0px) rotate(0deg)}}.rollIn{-webkit-animation-name:rollIn;animation-name:rollIn}@-webkit-keyframes rollOut{0%{opacity:1;-webkit-transform:translateX(0px) rotate(0deg);transform:translateX(0px) rotate(0deg)}100%{opacity:0;-webkit-transform:translateX(100%) rotate(120deg);transform:translateX(100%) rotate(120deg)}}@keyframes rollOut{0%{opacity:1;-webkit-transform:translateX(0px) rotate(0deg);-ms-transform:translateX(0px) rotate(0deg);transform:translateX(0px) rotate(0deg)}100%{opacity:0;-webkit-transform:translateX(100%) rotate(120deg);-ms-transform:translateX(100%) rotate(120deg);transform:translateX(100%) rotate(120deg)}}.rollOut{-webkit-animation-name:rollOut;animation-name:rollOut}@-webkit-keyframes zoomIn{0%{opacity:0;-webkit-transform:scale(.3);transform:scale(.3)}50%{opacity:1}}@keyframes zoomIn{0%{opacity:0;-webkit-transform:scale(.3);-ms-transform:scale(.3);transform:scale(.3)}50%{opacity:1}}.zoomIn{-webkit-animation-name:zoomIn;animation-name:zoomIn}@-webkit-keyframes zoomInDown{0%{opacity:0;-webkit-transform:scale(.1) translateY(-2000px);transform:scale(.1) translateY(-2000px);-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out}60%{opacity:1;-webkit-transform:scale(.475) translateY(60px);transform:scale(.475) translateY(60px);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}@keyframes zoomInDown{0%{opacity:0;-webkit-transform:scale(.1) translateY(-2000px);-ms-transform:scale(.1) translateY(-2000px);transform:scale(.1) translateY(-2000px);-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out}60%{opacity:1;-webkit-transform:scale(.475) translateY(60px);-ms-transform:scale(.475) translateY(60px);transform:scale(.475) translateY(60px);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}.zoomInDown{-webkit-animation-name:zoomInDown;animation-name:zoomInDown}@-webkit-keyframes zoomInLeft{0%{opacity:0;-webkit-transform:scale(.1) translateX(-2000px);transform:scale(.1) translateX(-2000px);-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out}60%{opacity:1;-webkit-transform:scale(.475) translateX(48px);transform:scale(.475) translateX(48px);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}@keyframes zoomInLeft{0%{opacity:0;-webkit-transform:scale(.1) translateX(-2000px);-ms-transform:scale(.1) translateX(-2000px);transform:scale(.1) translateX(-2000px);-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out}60%{opacity:1;-webkit-transform:scale(.475) translateX(48px);-ms-transform:scale(.475) translateX(48px);transform:scale(.475) translateX(48px);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}.zoomInLeft{-webkit-animation-name:zoomInLeft;animation-name:zoomInLeft}@-webkit-keyframes zoomInRight{0%{opacity:0;-webkit-transform:scale(.1) translateX(2000px);transform:scale(.1) translateX(2000px);-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out}60%{opacity:1;-webkit-transform:scale(.475) translateX(-48px);transform:scale(.475) translateX(-48px);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}@keyframes zoomInRight{0%{opacity:0;-webkit-transform:scale(.1) translateX(2000px);-ms-transform:scale(.1) translateX(2000px);transform:scale(.1) translateX(2000px);-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out}60%{opacity:1;-webkit-transform:scale(.475) translateX(-48px);-ms-transform:scale(.475) translateX(-48px);transform:scale(.475) translateX(-48px);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}.zoomInRight{-webkit-animation-name:zoomInRight;animation-name:zoomInRight}@-webkit-keyframes zoomInUp{0%{opacity:0;-webkit-transform:scale(.1) translateY(2000px);transform:scale(.1) translateY(2000px);-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out}60%{opacity:1;-webkit-transform:scale(.475) translateY(-60px);transform:scale(.475) translateY(-60px);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}@keyframes zoomInUp{0%{opacity:0;-webkit-transform:scale(.1) translateY(2000px);-ms-transform:scale(.1) translateY(2000px);transform:scale(.1) translateY(2000px);-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out}60%{opacity:1;-webkit-transform:scale(.475) translateY(-60px);-ms-transform:scale(.475) translateY(-60px);transform:scale(.475) translateY(-60px);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}.zoomInUp{-webkit-animation-name:zoomInUp;animation-name:zoomInUp}@-webkit-keyframes zoomOut{0%{opacity:1;-webkit-transform:scale(1);transform:scale(1)}50%{opacity:0;-webkit-transform:scale(.3);transform:scale(.3)}100%{opacity:0}}@keyframes zoomOut{0%{opacity:1;-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1)}50%{opacity:0;-webkit-transform:scale(.3);-ms-transform:scale(.3);transform:scale(.3)}100%{opacity:0}}.zoomOut{-webkit-animation-name:zoomOut;animation-name:zoomOut}@-webkit-keyframes zoomOutDown{40%{opacity:1;-webkit-transform:scale(.475) translateY(-60px);transform:scale(.475) translateY(-60px);-webkit-animation-timing-function:linear;animation-timing-function:linear}100%{opacity:0;-webkit-transform:scale(.1) translateY(2000px);transform:scale(.1) translateY(2000px);-webkit-transform-origin:center bottom;transform-origin:center bottom}}@keyframes zoomOutDown{40%{opacity:1;-webkit-transform:scale(.475) translateY(-60px);-ms-transform:scale(.475) translateY(-60px);transform:scale(.475) translateY(-60px);-webkit-animation-timing-function:linear;animation-timing-function:linear}100%{opacity:0;-webkit-transform:scale(.1) translateY(2000px);-ms-transform:scale(.1) translateY(2000px);transform:scale(.1) translateY(2000px);-webkit-transform-origin:center bottom;-ms-transform-origin:center bottom;transform-origin:center bottom}}.zoomOutDown{-webkit-animation-name:zoomOutDown;animation-name:zoomOutDown}@-webkit-keyframes zoomOutLeft{40%{opacity:1;-webkit-transform:scale(.475) translateX(42px);transform:scale(.475) translateX(42px);-webkit-animation-timing-function:linear;animation-timing-function:linear}100%{opacity:0;-webkit-transform:scale(.1) translateX(-2000px);transform:scale(.1) translateX(-2000px);-webkit-transform-origin:left center;transform-origin:left center}}@keyframes zoomOutLeft{40%{opacity:1;-webkit-transform:scale(.475) translateX(42px);-ms-transform:scale(.475) translateX(42px);transform:scale(.475) translateX(42px);-webkit-animation-timing-function:linear;animation-timing-function:linear}100%{opacity:0;-webkit-transform:scale(.1) translateX(-2000px);-ms-transform:scale(.1) translateX(-2000px);transform:scale(.1) translateX(-2000px);-webkit-transform-origin:left center;-ms-transform-origin:left center;transform-origin:left center}}.zoomOutLeft{-webkit-animation-name:zoomOutLeft;animation-name:zoomOutLeft}@-webkit-keyframes zoomOutRight{40%{opacity:1;-webkit-transform:scale(.475) translateX(-42px);transform:scale(.475) translateX(-42px);-webkit-animation-timing-function:linear;animation-timing-function:linear}100%{opacity:0;-webkit-transform:scale(.1) translateX(2000px);transform:scale(.1) translateX(2000px);-webkit-transform-origin:right center;transform-origin:right center}}@keyframes zoomOutRight{40%{opacity:1;-webkit-transform:scale(.475) translateX(-42px);-ms-transform:scale(.475) translateX(-42px);transform:scale(.475) translateX(-42px);-webkit-animation-timing-function:linear;animation-timing-function:linear}100%{opacity:0;-webkit-transform:scale(.1) translateX(2000px);-ms-transform:scale(.1) translateX(2000px);transform:scale(.1) translateX(2000px);-webkit-transform-origin:right center;-ms-transform-origin:right center;transform-origin:right center}}.zoomOutRight{-webkit-animation-name:zoomOutRight;animation-name:zoomOutRight}@-webkit-keyframes zoomOutUp{40%{opacity:1;-webkit-transform:scale(.475) translateY(60px);transform:scale(.475) translateY(60px);-webkit-animation-timing-function:linear;animation-timing-function:linear}100%{opacity:0;-webkit-transform:scale(.1) translateY(-2000px);transform:scale(.1) translateY(-2000px);-webkit-transform-origin:center top;transform-origin:center top}}@keyframes zoomOutUp{40%{opacity:1;-webkit-transform:scale(.475) translateY(60px);-ms-transform:scale(.475) translateY(60px);transform:scale(.475) translateY(60px);-webkit-animation-timing-function:linear;animation-timing-function:linear}100%{opacity:0;-webkit-transform:scale(.1) translateY(-2000px);-ms-transform:scale(.1) translateY(-2000px);transform:scale(.1) translateY(-2000px);-webkit-transform-origin:center top;-ms-transform-origin:center top;transform-origin:center top}}.zoomOutUp{-webkit-animation-name:zoomOutUp;animation-name:zoomOutUp}", ""]);
+
+	// exports
+
+
+/***/ },
+/* 178 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(179);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(167)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./prettyPhoto.css", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./prettyPhoto.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 179 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(162)();
+	// imports
+
+
+	// module
+	exports.push([module.id, "div.pp_default .pp_top,div.pp_default .pp_top .pp_middle,div.pp_default .pp_top .pp_left,div.pp_default .pp_top .pp_right,div.pp_default .pp_bottom,div.pp_default .pp_bottom .pp_left,div.pp_default .pp_bottom .pp_middle,div.pp_default .pp_bottom .pp_right{height:13px}\ndiv.pp_default .pp_top .pp_left{background:url(" + __webpack_require__(180) + ") -78px -93px no-repeat}\ndiv.pp_default .pp_top .pp_middle{background:url(" + __webpack_require__(181) + ") top left repeat-x}\ndiv.pp_default .pp_top .pp_right{background:url(" + __webpack_require__(180) + ") -112px -93px no-repeat}\ndiv.pp_default .pp_content .ppt{color:#f8f8f8}\ndiv.pp_default .pp_content_container .pp_left{background:url(" + __webpack_require__(182) + ") -7px 0 repeat-y;padding-left:13px}\ndiv.pp_default .pp_content_container .pp_right{background:url(" + __webpack_require__(182) + ") top right repeat-y;padding-right:13px}\ndiv.pp_default .pp_next:hover{background:url(" + __webpack_require__(183) + ") center right no-repeat;cursor:pointer}\ndiv.pp_default .pp_previous:hover{background:url(" + __webpack_require__(184) + ") center left no-repeat;cursor:pointer}\ndiv.pp_default .pp_expand{background:url(" + __webpack_require__(180) + ") 0 -29px no-repeat;cursor:pointer;width:28px;height:28px}\ndiv.pp_default .pp_expand:hover{background:url(" + __webpack_require__(180) + ") 0 -56px no-repeat;cursor:pointer}\ndiv.pp_default .pp_contract{background:url(" + __webpack_require__(180) + ") 0 -84px no-repeat;cursor:pointer;width:28px;height:28px}\ndiv.pp_default .pp_contract:hover{background:url(" + __webpack_require__(180) + ") 0 -113px no-repeat;cursor:pointer}\ndiv.pp_default .pp_close{width:30px;height:30px;background:url(" + __webpack_require__(180) + ") 2px 1px no-repeat;cursor:pointer}\ndiv.pp_default .pp_gallery ul li a{background:url(" + __webpack_require__(185) + ") center center #f8f8f8;border:1px solid #aaa}\ndiv.pp_default .pp_social{margin-top:7px}\ndiv.pp_default .pp_gallery a.pp_arrow_previous,div.pp_default .pp_gallery a.pp_arrow_next{position:static;left:auto}\ndiv.pp_default .pp_nav .pp_play,div.pp_default .pp_nav .pp_pause{background:url(" + __webpack_require__(180) + ") -51px 1px no-repeat;height:30px;width:30px}\ndiv.pp_default .pp_nav .pp_pause{background-position:-51px -29px}\ndiv.pp_default a.pp_arrow_previous,div.pp_default a.pp_arrow_next{background:url(" + __webpack_require__(180) + ") -31px -3px no-repeat;height:20px;width:20px;margin:4px 0 0}\ndiv.pp_default a.pp_arrow_next{left:52px;background-position:-82px -3px}\ndiv.pp_default .pp_content_container .pp_details{margin-top:5px}\ndiv.pp_default .pp_nav{clear:none;height:30px;width:110px;position:relative}\ndiv.pp_default .pp_nav .currentTextHolder{font-family:Georgia;font-style:italic;color:#999;font-size:11px;left:75px;line-height:25px;position:absolute;top:2px;margin:0;padding:0 0 0 10px}\ndiv.pp_default .pp_close:hover,div.pp_default .pp_nav .pp_play:hover,div.pp_default .pp_nav .pp_pause:hover,div.pp_default .pp_arrow_next:hover,div.pp_default .pp_arrow_previous:hover{opacity:0.7}\ndiv.pp_default .pp_description{font-size:11px;font-weight:700;line-height:14px;margin:5px 50px 5px 0}\ndiv.pp_default .pp_bottom .pp_left{background:url(" + __webpack_require__(180) + ") -78px -127px no-repeat}\ndiv.pp_default .pp_bottom .pp_middle{background:url(" + __webpack_require__(181) + ") bottom left repeat-x}\ndiv.pp_default .pp_bottom .pp_right{background:url(" + __webpack_require__(180) + ") -112px -127px no-repeat}\ndiv.pp_default .pp_loaderIcon{background:url(" + __webpack_require__(186) + ") center center no-repeat}\ndiv.light_rounded .pp_top .pp_left{background:url(" + __webpack_require__(187) + ") -88px -53px no-repeat}\ndiv.light_rounded .pp_top .pp_right{background:url(" + __webpack_require__(187) + ") -110px -53px no-repeat}\ndiv.light_rounded .pp_next:hover{background:url(" + __webpack_require__(188) + ") center right no-repeat;cursor:pointer}\ndiv.light_rounded .pp_previous:hover{background:url(" + __webpack_require__(189) + ") center left no-repeat;cursor:pointer}\ndiv.light_rounded .pp_expand{background:url(" + __webpack_require__(187) + ") -31px -26px no-repeat;cursor:pointer}\ndiv.light_rounded .pp_expand:hover{background:url(" + __webpack_require__(187) + ") -31px -47px no-repeat;cursor:pointer}\ndiv.light_rounded .pp_contract{background:url(" + __webpack_require__(187) + ") 0 -26px no-repeat;cursor:pointer}\ndiv.light_rounded .pp_contract:hover{background:url(" + __webpack_require__(187) + ") 0 -47px no-repeat;cursor:pointer}\ndiv.light_rounded .pp_close{width:75px;height:22px;background:url(" + __webpack_require__(187) + ") -1px -1px no-repeat;cursor:pointer}\ndiv.light_rounded .pp_nav .pp_play{background:url(" + __webpack_require__(187) + ") -1px -100px no-repeat;height:15px;width:14px}\ndiv.light_rounded .pp_nav .pp_pause{background:url(" + __webpack_require__(187) + ") -24px -100px no-repeat;height:15px;width:14px}\ndiv.light_rounded .pp_arrow_previous{background:url(" + __webpack_require__(187) + ") 0 -71px no-repeat}\ndiv.light_rounded .pp_arrow_next{background:url(" + __webpack_require__(187) + ") -22px -71px no-repeat}\ndiv.light_rounded .pp_bottom .pp_left{background:url(" + __webpack_require__(187) + ") -88px -80px no-repeat}\ndiv.light_rounded .pp_bottom .pp_right{background:url(" + __webpack_require__(187) + ") -110px -80px no-repeat}\ndiv.dark_rounded .pp_top .pp_left{background:url(" + __webpack_require__(190) + ") -88px -53px no-repeat}\ndiv.dark_rounded .pp_top .pp_right{background:url(" + __webpack_require__(190) + ") -110px -53px no-repeat}\ndiv.dark_rounded .pp_content_container .pp_left{background:url(" + __webpack_require__(191) + ") top left repeat-y}\ndiv.dark_rounded .pp_content_container .pp_right{background:url(" + __webpack_require__(191) + ") top right repeat-y}\ndiv.dark_rounded .pp_next:hover{background:url(" + __webpack_require__(192) + ") center right no-repeat;cursor:pointer}\ndiv.dark_rounded .pp_previous:hover{background:url(" + __webpack_require__(193) + ") center left no-repeat;cursor:pointer}\ndiv.dark_rounded .pp_expand{background:url(" + __webpack_require__(190) + ") -31px -26px no-repeat;cursor:pointer}\ndiv.dark_rounded .pp_expand:hover{background:url(" + __webpack_require__(190) + ") -31px -47px no-repeat;cursor:pointer}\ndiv.dark_rounded .pp_contract{background:url(" + __webpack_require__(190) + ") 0 -26px no-repeat;cursor:pointer}\ndiv.dark_rounded .pp_contract:hover{background:url(" + __webpack_require__(190) + ") 0 -47px no-repeat;cursor:pointer}\ndiv.dark_rounded .pp_close{width:75px;height:22px;background:url(" + __webpack_require__(190) + ") -1px -1px no-repeat;cursor:pointer}\ndiv.dark_rounded .pp_description{margin-right:85px;color:#fff}\ndiv.dark_rounded .pp_nav .pp_play{background:url(" + __webpack_require__(190) + ") -1px -100px no-repeat;height:15px;width:14px}\ndiv.dark_rounded .pp_nav .pp_pause{background:url(" + __webpack_require__(190) + ") -24px -100px no-repeat;height:15px;width:14px}\ndiv.dark_rounded .pp_arrow_previous{background:url(" + __webpack_require__(190) + ") 0 -71px no-repeat}\ndiv.dark_rounded .pp_arrow_next{background:url(" + __webpack_require__(190) + ") -22px -71px no-repeat}\ndiv.dark_rounded .pp_bottom .pp_left{background:url(" + __webpack_require__(190) + ") -88px -80px no-repeat}\ndiv.dark_rounded .pp_bottom .pp_right{background:url(" + __webpack_require__(190) + ") -110px -80px no-repeat}\ndiv.dark_rounded .pp_loaderIcon{background:url(" + __webpack_require__(194) + ") center center no-repeat}\ndiv.dark_square .pp_left,div.dark_square .pp_middle,div.dark_square .pp_right,div.dark_square .pp_content{background:#000}\ndiv.dark_square .pp_description{color:#fff;margin:0 85px 0 0}\ndiv.dark_square .pp_loaderIcon{background:url(" + __webpack_require__(195) + ") center center no-repeat}\ndiv.dark_square .pp_expand{background:url(" + __webpack_require__(196) + ") -31px -26px no-repeat;cursor:pointer}\ndiv.dark_square .pp_expand:hover{background:url(" + __webpack_require__(196) + ") -31px -47px no-repeat;cursor:pointer}\ndiv.dark_square .pp_contract{background:url(" + __webpack_require__(196) + ") 0 -26px no-repeat;cursor:pointer}\ndiv.dark_square .pp_contract:hover{background:url(" + __webpack_require__(196) + ") 0 -47px no-repeat;cursor:pointer}\ndiv.dark_square .pp_close{width:75px;height:22px;background:url(" + __webpack_require__(196) + ") -1px -1px no-repeat;cursor:pointer}\ndiv.dark_square .pp_nav{clear:none}\ndiv.dark_square .pp_nav .pp_play{background:url(" + __webpack_require__(196) + ") -1px -100px no-repeat;height:15px;width:14px}\ndiv.dark_square .pp_nav .pp_pause{background:url(" + __webpack_require__(196) + ") -24px -100px no-repeat;height:15px;width:14px}\ndiv.dark_square .pp_arrow_previous{background:url(" + __webpack_require__(196) + ") 0 -71px no-repeat}\ndiv.dark_square .pp_arrow_next{background:url(" + __webpack_require__(196) + ") -22px -71px no-repeat}\ndiv.dark_square .pp_next:hover{background:url(" + __webpack_require__(197) + ") center right no-repeat;cursor:pointer}\ndiv.dark_square .pp_previous:hover{background:url(" + __webpack_require__(198) + ") center left no-repeat;cursor:pointer}\ndiv.light_square .pp_expand{background:url(" + __webpack_require__(199) + ") -31px -26px no-repeat;cursor:pointer}\ndiv.light_square .pp_expand:hover{background:url(" + __webpack_require__(199) + ") -31px -47px no-repeat;cursor:pointer}\ndiv.light_square .pp_contract{background:url(" + __webpack_require__(199) + ") 0 -26px no-repeat;cursor:pointer}\ndiv.light_square .pp_contract:hover{background:url(" + __webpack_require__(199) + ") 0 -47px no-repeat;cursor:pointer}\ndiv.light_square .pp_close{width:75px;height:22px;background:url(" + __webpack_require__(199) + ") -1px -1px no-repeat;cursor:pointer}\ndiv.light_square .pp_nav .pp_play{background:url(" + __webpack_require__(199) + ") -1px -100px no-repeat;height:15px;width:14px}\ndiv.light_square .pp_nav .pp_pause{background:url(" + __webpack_require__(199) + ") -24px -100px no-repeat;height:15px;width:14px}\ndiv.light_square .pp_arrow_previous{background:url(" + __webpack_require__(199) + ") 0 -71px no-repeat}\ndiv.light_square .pp_arrow_next{background:url(" + __webpack_require__(199) + ") -22px -71px no-repeat}\ndiv.light_square .pp_next:hover{background:url(" + __webpack_require__(200) + ") center right no-repeat;cursor:pointer}\ndiv.light_square .pp_previous:hover{background:url(" + __webpack_require__(201) + ") center left no-repeat;cursor:pointer}\ndiv.facebook .pp_top .pp_left{background:url(" + __webpack_require__(202) + ") -88px -53px no-repeat}\ndiv.facebook .pp_top .pp_middle{background:url(" + __webpack_require__(203) + ") top left repeat-x}\ndiv.facebook .pp_top .pp_right{background:url(" + __webpack_require__(202) + ") -110px -53px no-repeat}\ndiv.facebook .pp_content_container .pp_left{background:url(" + __webpack_require__(204) + ") top left repeat-y}\ndiv.facebook .pp_content_container .pp_right{background:url(" + __webpack_require__(205) + ") top right repeat-y}\ndiv.facebook .pp_expand{background:url(" + __webpack_require__(202) + ") -31px -26px no-repeat;cursor:pointer}\ndiv.facebook .pp_expand:hover{background:url(" + __webpack_require__(202) + ") -31px -47px no-repeat;cursor:pointer}\ndiv.facebook .pp_contract{background:url(" + __webpack_require__(202) + ") 0 -26px no-repeat;cursor:pointer}\ndiv.facebook .pp_contract:hover{background:url(" + __webpack_require__(202) + ") 0 -47px no-repeat;cursor:pointer}\ndiv.facebook .pp_close{width:22px;height:22px;background:url(" + __webpack_require__(202) + ") -1px -1px no-repeat;cursor:pointer}\ndiv.facebook .pp_description{margin:0 37px 0 0}\ndiv.facebook .pp_loaderIcon{background:url(" + __webpack_require__(206) + ") center center no-repeat}\ndiv.facebook .pp_arrow_previous{background:url(" + __webpack_require__(202) + ") 0 -71px no-repeat;height:22px;margin-top:0;width:22px}\ndiv.facebook .pp_arrow_previous.disabled{background-position:0 -96px;cursor:default}\ndiv.facebook .pp_arrow_next{background:url(" + __webpack_require__(202) + ") -32px -71px no-repeat;height:22px;margin-top:0;width:22px}\ndiv.facebook .pp_arrow_next.disabled{background-position:-32px -96px;cursor:default}\ndiv.facebook .pp_nav{margin-top:0}\ndiv.facebook .pp_nav p{font-size:15px;padding:0 3px 0 4px}\ndiv.facebook .pp_nav .pp_play{background:url(" + __webpack_require__(202) + ") -1px -123px no-repeat;height:22px;width:22px}\ndiv.facebook .pp_nav .pp_pause{background:url(" + __webpack_require__(202) + ") -32px -123px no-repeat;height:22px;width:22px}\ndiv.facebook .pp_next:hover{background:url(" + __webpack_require__(207) + ") center right no-repeat;cursor:pointer}\ndiv.facebook .pp_previous:hover{background:url(" + __webpack_require__(208) + ") center left no-repeat;cursor:pointer}\ndiv.facebook .pp_bottom .pp_left{background:url(" + __webpack_require__(202) + ") -88px -80px no-repeat}\ndiv.facebook .pp_bottom .pp_middle{background:url(" + __webpack_require__(209) + ") top left repeat-x}\ndiv.facebook .pp_bottom .pp_right{background:url(" + __webpack_require__(202) + ") -110px -80px no-repeat}\ndiv.pp_pic_holder a:focus{outline:none}\ndiv.pp_overlay{background:#000;display:none;left:0;position:absolute;top:0;width:100%;z-index:9500}\ndiv.pp_pic_holder{display:none;position:absolute;width:100px;z-index:10000}\n.pp_content{height:40px;min-width:40px}\n* html .pp_content{width:40px}\n.pp_content_container{position:relative;text-align:left;width:100%}\n.pp_content_container .pp_left{padding-left:20px}\n.pp_content_container .pp_right{padding-right:20px}\n.pp_content_container .pp_details{float:left;margin:10px 0 2px}\n.pp_description{display:none;margin:0}\n.pp_social{float:left;margin:0}\n.pp_social .facebook{float:left;margin-left:5px;width:55px;overflow:hidden}\n.pp_social .twitter{float:left}\n.pp_nav{clear:right;float:left;margin:3px 10px 0 0}\n.pp_nav p{float:left;white-space:nowrap;margin:2px 4px}\n.pp_nav .pp_play,.pp_nav .pp_pause{float:left;margin-right:4px;text-indent:-10000px}\na.pp_arrow_previous,a.pp_arrow_next{display:block;float:left;height:15px;margin-top:3px;overflow:hidden;text-indent:-10000px;width:14px}\n.pp_hoverContainer{position:absolute;top:0;width:100%;z-index:2000}\n.pp_gallery{display:none;left:50%;margin-top:-50px;position:absolute;z-index:10000}\n.pp_gallery div{float:left;overflow:hidden;position:relative}\n.pp_gallery ul{float:left;height:35px;position:relative;white-space:nowrap;margin:0 0 0 5px;padding:0}\n.pp_gallery ul a{border:1px rgba(0,0,0,0.5) solid;display:block;float:left;height:33px;overflow:hidden}\n.pp_gallery ul a img{border:0}\n.pp_gallery li{display:block;float:left;margin:0 5px 0 0;padding:0}\n.pp_gallery li.default a{background:url(" + __webpack_require__(210) + ") 0 0 no-repeat;display:block;height:33px;width:50px}\n.pp_gallery .pp_arrow_previous,.pp_gallery .pp_arrow_next{margin-top:7px!important}\na.pp_next{background:url(" + __webpack_require__(188) + ") 10000px 10000px no-repeat;display:block;float:right;height:100%;text-indent:-10000px;width:49%}\na.pp_previous{background:url(" + __webpack_require__(188) + ") 10000px 10000px no-repeat;display:block;float:left;height:100%;text-indent:-10000px;width:49%}\na.pp_expand,a.pp_contract{cursor:pointer;display:none;height:20px;position:absolute;right:30px;text-indent:-10000px;top:10px;width:20px;z-index:20000}\na.pp_close{position:absolute;right:0;top:0;display:block;line-height:22px;text-indent:-10000px}\n.pp_loaderIcon{display:block;height:24px;left:50%;position:absolute;top:50%;width:24px;margin:-12px 0 0 -12px}\n#pp_full_res{line-height:1!important}\n#pp_full_res .pp_inline{text-align:left}\n#pp_full_res .pp_inline p{margin:0 0 15px}\ndiv.ppt{color:#fff;display:none;font-size:17px;z-index:9999;margin:0 0 5px 15px}\ndiv.pp_default .pp_content,div.light_rounded .pp_content{background-color:#fff}\ndiv.pp_default #pp_full_res .pp_inline,div.light_rounded .pp_content .ppt,div.light_rounded #pp_full_res .pp_inline,div.light_square .pp_content .ppt,div.light_square #pp_full_res .pp_inline,div.facebook .pp_content .ppt,div.facebook #pp_full_res .pp_inline{color:#000}\ndiv.pp_default .pp_gallery ul li a:hover,div.pp_default .pp_gallery ul li.selected a,.pp_gallery ul a:hover,.pp_gallery li.selected a{border-color:#fff}\ndiv.pp_default .pp_details,div.light_rounded .pp_details,div.dark_rounded .pp_details,div.dark_square .pp_details,div.light_square .pp_details,div.facebook .pp_details{position:relative}\ndiv.light_rounded .pp_top .pp_middle,div.light_rounded .pp_content_container .pp_left,div.light_rounded .pp_content_container .pp_right,div.light_rounded .pp_bottom .pp_middle,div.light_square .pp_left,div.light_square .pp_middle,div.light_square .pp_right,div.light_square .pp_content,div.facebook .pp_content{background:#fff}\ndiv.light_rounded .pp_description,div.light_square .pp_description{margin-right:85px}\ndiv.light_rounded .pp_gallery a.pp_arrow_previous,div.light_rounded .pp_gallery a.pp_arrow_next,div.dark_rounded .pp_gallery a.pp_arrow_previous,div.dark_rounded .pp_gallery a.pp_arrow_next,div.dark_square .pp_gallery a.pp_arrow_previous,div.dark_square .pp_gallery a.pp_arrow_next,div.light_square .pp_gallery a.pp_arrow_previous,div.light_square .pp_gallery a.pp_arrow_next{margin-top:12px!important}\ndiv.light_rounded .pp_arrow_previous.disabled,div.dark_rounded .pp_arrow_previous.disabled,div.dark_square .pp_arrow_previous.disabled,div.light_square .pp_arrow_previous.disabled{background-position:0 -87px;cursor:default}\ndiv.light_rounded .pp_arrow_next.disabled,div.dark_rounded .pp_arrow_next.disabled,div.dark_square .pp_arrow_next.disabled,div.light_square .pp_arrow_next.disabled{background-position:-22px -87px;cursor:default}\ndiv.light_rounded .pp_loaderIcon,div.light_square .pp_loaderIcon{background:url(" + __webpack_require__(211) + ") center center no-repeat}\ndiv.dark_rounded .pp_top .pp_middle,div.dark_rounded .pp_content,div.dark_rounded .pp_bottom .pp_middle{background:url(" + __webpack_require__(191) + ") top left repeat}\ndiv.dark_rounded .currentTextHolder,div.dark_square .currentTextHolder{color:#c4c4c4}\ndiv.dark_rounded #pp_full_res .pp_inline,div.dark_square #pp_full_res .pp_inline{color:#fff}\n.pp_top,.pp_bottom{height:20px;position:relative}\n* html .pp_top,* html .pp_bottom{padding:0 20px}\n.pp_top .pp_left,.pp_bottom .pp_left{height:20px;left:0;position:absolute;width:20px}\n.pp_top .pp_middle,.pp_bottom .pp_middle{height:20px;left:20px;position:absolute;right:20px}\n* html .pp_top .pp_middle,* html .pp_bottom .pp_middle{left:0;position:static}\n.pp_top .pp_right,.pp_bottom .pp_right{height:20px;left:auto;position:absolute;right:0;top:0;width:20px}\n.pp_fade,.pp_gallery li.default a img{display:none}", ""]);
+
+	// exports
+
+
+/***/ },
+/* 180 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "f814686dca4830164d3f8d2c949b42cf.png";
+
+/***/ },
+/* 181 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "26b97559a5225bf3cc3e1634950bcb84.png";
+
+/***/ },
+/* 182 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "096e04fbfb474c46cf17a9a878b3d221.png";
+
+/***/ },
+/* 183 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "b903c8c15dff677b7b3dfd042fe8d860.png";
+
+/***/ },
+/* 184 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "bf55ea7dede2004166dc4024c5b5528c.png";
+
+/***/ },
+/* 185 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "8a3e7c798030574d519d3d167a5e6d5d.png";
+
+/***/ },
+/* 186 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "8393c5f7e394698f751ee6a11fff3dc7.gif";
+
+/***/ },
+/* 187 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "45b32c620cfb4a677f9b8c4360a8d3c4.png";
+
+/***/ },
+/* 188 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "0a89018b6e4a1492623ca2b608b606ff.png";
+
+/***/ },
+/* 189 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "9ad8565740908ecab23ff67990e590cc.png";
+
+/***/ },
+/* 190 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "272462d6f733a5f1723ea87916afa4f1.png";
+
+/***/ },
+/* 191 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "2f2d883ab9986e7eaa9f1cba98e2bbaf.png";
+
+/***/ },
+/* 192 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "0a89018b6e4a1492623ca2b608b606ff.png";
+
+/***/ },
+/* 193 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "9ad8565740908ecab23ff67990e590cc.png";
+
+/***/ },
+/* 194 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "4297900ae2d9d0c4eb00d1c15462fb19.gif";
+
+/***/ },
+/* 195 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "4297900ae2d9d0c4eb00d1c15462fb19.gif";
+
+/***/ },
+/* 196 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "6b25600839837ed891e1d2f17ba01c28.png";
+
+/***/ },
+/* 197 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "0a89018b6e4a1492623ca2b608b606ff.png";
+
+/***/ },
+/* 198 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "9ad8565740908ecab23ff67990e590cc.png";
+
+/***/ },
+/* 199 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "6b25600839837ed891e1d2f17ba01c28.png";
+
+/***/ },
+/* 200 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "0a89018b6e4a1492623ca2b608b606ff.png";
+
+/***/ },
+/* 201 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "9ad8565740908ecab23ff67990e590cc.png";
+
+/***/ },
+/* 202 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "a157ef765ce8288984373a7eba6b9a23.png";
+
+/***/ },
+/* 203 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "c2e5c4ec6fc9ee4e49c79ff7e18c9695.png";
+
+/***/ },
+/* 204 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "3b7f995669ad8cbf24acccb8f1d70f4d.png";
+
+/***/ },
+/* 205 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "74bfb933f639e76971ca5db1ae612011.png";
+
+/***/ },
+/* 206 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "df46993044576f83f2c2cc1a64e18f31.gif";
+
+/***/ },
+/* 207 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "b8d4bf8440aae57321064ecaf2efea7e.png";
+
+/***/ },
+/* 208 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "b251170307bcb724ac5b4e97482dc6ed.png";
+
+/***/ },
+/* 209 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "a6fab9b4551a6274d71703b610eb6abd.png";
+
+/***/ },
+/* 210 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "ed52db277173876860b62071785a2177.gif";
+
+/***/ },
+/* 211 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "df46993044576f83f2c2cc1a64e18f31.gif";
+
+/***/ },
+/* 212 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(213);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(167)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./main.css", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./main.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 213 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(162)();
+	// imports
+	exports.push([module.id, "@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,300,800);", ""]);
+
+	// module
+	exports.push([module.id, "/*************************\n*******Typography******\n**************************/\n\nbody {\n  background: #fff;\n  font-family: 'Open Sans', sans-serif;\n  color:#4e4e4e;\n  line-height: 22px;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  font-weight: 600; \n  font-family: 'Open Sans', sans-serif;\n  color:#4e4e4e;\n}\n\nh1{\n  font-size: 36px;\n  color:#fff;\n}\n\nh2{\n  font-size: 20px;\n}\n\nh3{\n  font-size: 16px;\n  color: #787878;\n  font-weight: 400;\n  line-height: 24px;\n}\n\nh4{\n  font-size: 16px;\n}\n\na {\n  color: #c52d2f;\n  -webkit-transition: color 300ms, background-color 300ms;\n  -moz-transition: color 300ms, background-color 300ms;\n  -o-transition:  color 300ms, background-color 300ms;\n  transition:  color 300ms, background-color 300ms;\n}\n\na:hover, a:focus {\n  color: #d43133;\n}\n\nhr {\n  border-top: 1px solid #e5e5e5;\n  border-bottom: 1px solid #fff;\n}\n\n\n.btn-primary {\n  padding: 8px 20px;\n  background: #c52d2f;\n  color: #fff;\n  border-radius: 4px;\n  border:none;\n  margin-top: 10px;\n}\n\n\n.btn-primary:hover, \n.btn-primary:focus{\n  background: #c52d2f;\n  outline: none;\n  box-shadow: none;\n} \n\n.btn-transparent {\n  border: 3px solid #fff;\n  background: transparent;\n  color: #fff;\n}\n\n.btn-transparent:hover {\n  border-color: rgba(255, 255, 255, 0.5);\n}\n\na:hover,\na:focus {\n  color: #111;\n  text-decoration: none;\n  outline: none;\n}\n\n.dropdown-menu {\n  margin-top: -1px;\n  min-width: 180px;\n}\n\n.center h2{\n  font-size: 36px;\n  margin-top: 0;\n  margin-bottom: 20px;\n}\n\n.media>.pull-left{\n  margin-right: 20px;\n}\n\n.media>.pull-right{\n  margin-left: 20px;\n}\n\nbody > section {\n  padding: 70px 0;\n}\n\n.center {\n  text-align: center;\n  padding-bottom: 55px;\n}\n\n.scaleIn {\n  -webkit-animation-name: scaleIn;\n  animation-name: scaleIn;\n}\n\n.lead{\n  font-size: 16px;\n  line-height: 24px;\n  font-weight: 400;\n}\n\n.transparent-bg {\n  background-color: transparent !important;\n  margin-bottom: 0;\n}\n\n@-webkit-keyframes scaleIn {\n  0% {\n    opacity: 0;\n    -webkit-transform: scale(0);\n    transform: scale(0);\n  }\n\n  100% {\n    opacity: 1;\n    -webkit-transform: scale(1);\n    transform: scale(1);\n  }\n}\n\n@keyframes scaleIn {\n  0% {\n    opacity: 0;\n    -webkit-transform: scale(0);\n    -ms-transform: scale(0);\n    transform: scale(0);\n  }\n\n  100% {\n    opacity: 1;\n    -webkit-transform: scale(1);\n    -ms-transform: scale(1);\n    transform: scale(1);\n  }\n}\n\n\n/*************************\n*******Header******\n**************************/\n\n#header .search{\n  display: inline-block;\n}\n\n.navbar>.container .navbar-brand{\n  margin-left: 0;\n}\n\n.top-bar {\n  padding: 10px 0;\n  background: #191919;\n  border-bottom: 1px solid #222;\n  line-height: 28px;\n}\n\n.top-number{\n  color: #fff;\n}\n\n.top-number p{\n  margin: 0\n}\n\n.social{\n  text-align: right;\n}\n\n.social-share{\n display: inline-block;\n list-style: none;\n padding: 0;\n margin: 0;\n}\n\nul.social-share li {\n  display: inline-block;\n}\n\nul.social-share li a {\n  display: inline-block;\n  color: #fff;\n  background: #404040;\n  width: 25px;\n  height: 25px;\n  line-height: 25px;\n  text-align: center;\n  border-radius: 2px;\n}\n\nul.social-share li a:hover {\n  background: #c52d2f;\n  color: #fff;\n}\n\n.search i {\n  color: #fff;\n}\n\ninput.search-form{\n  background: transparent;\n  border: 0 none;\n  width: 60px;\n  padding: 0 10px;\n  color: #FFF;\n  -webkit-transition: all 400ms;\n  -moz-transition: all 400ms;\n  -ms-transition: all 400ms;\n  -o-transition: all 400ms;\n  transition: all 400ms;\n}\n\ninput.search-form::-webkit-input-placeholder{\n  color: transparent;\n}\n\ninput.search-form:hover::-webkit-input-placeholder {\n  color: #fff;\n}\n\ninput.search-form:hover {\n  width: 180px;\n}\n\n.navbar-brand {\n  padding: 0;\n  margin:0;\n}\n\n.navbar {\n  border-radius: 0;\n  margin-bottom: 0;\n  background: #151515;\n  padding: 15px 0;\n  padding-bottom: 0;\n}\n\n .navbar-nav{\n  margin-top: 12px;\n }\n\n.navbar-nav>li{\n  margin-left: 35px;\n  padding-bottom: 28px;\n}\n\n.navbar-inverse .navbar-nav > li > a {\n  padding: 5px 12px;\n  margin: 0;\n  border-radius: 3px;\n  color: #fff;\n  line-height: 24px;\n  display: inline-block;\n}\n\n.navbar-inverse .navbar-nav > li > a:hover{\n\tbackground-color: #c52d2f;\n  color: #fff;\n}\n\n.navbar-inverse {\n  border: none;\n}\n\n.navbar-inverse .navbar-brand {\n  font-size: 36px;\n  line-height: 50px;\n  color: #fff;\n}\n\n.navbar-inverse .navbar-nav > .active > a,\n.navbar-inverse .navbar-nav > .active > a:hover,\n.navbar-inverse .navbar-nav > .active > a:focus,\n.navbar-inverse .navbar-nav > .open > a,\n.navbar-inverse .navbar-nav > .open > a:hover,\n.navbar-inverse .navbar-nav > .open > a:focus {\n  background-color: #c52d2f;\n  color: #fff;\n}\n\n.navbar-inverse .navbar-nav .dropdown-menu {\n  background-color: rgba(0,0,0,.85);\n  -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.125);\n  -moz-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.125);\n  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.125);\n  border: 0;\n  padding: 0;\n  margin-top: 0;\n  border-top: 0;\n  border-radius: 0;\n  left: 0;\n}\n\n.navbar-inverse .navbar-nav .dropdown-menu:before{\n  position: absolute;\n  top:0;\n}\n\n.navbar-inverse .navbar-nav .dropdown-menu > li > a {\n  padding: 8px 15px;\n  color: #fff;\n}\n\n.navbar-inverse .navbar-nav .dropdown-menu > li:hover > a,\n.navbar-inverse .navbar-nav .dropdown-menu > li:focus > a,\n.navbar-inverse .navbar-nav .dropdown-menu > li.active > a {\n  background-color: #c52d2f;\n  color: #fff;\n}\n\n.navbar-inverse .navbar-nav .dropdown-menu > li:last-child > a {\n  border-radius: 0 0 3px 3px;\n}\n\n.navbar-inverse .navbar-nav .dropdown-menu > li.divider {\n  background-color: transparent;\n}\n\n.navbar-inverse .navbar-collapse,\n.navbar-inverse .navbar-form {\n  border-top: 0;\n  padding-bottom: 0;\n}\n\n\n/*************************\n*******Home Page******\n**************************/\n\n\n#main-slider {\n  position: relative;\n}\n\n.no-margin {\n  margin: 0;\n  padding: 0;\n}\n\n#main-slider .carousel .carousel-content {\n  margin-top: 150px;\n}\n\n#main-slider .carousel .slide-margin{\n  margin-top: 140px;\n}\n\n#main-slider .carousel h2 {\n  color: #fff;\n}\n\n#main-slider .carousel .btn-slide {\n  padding: 8px 20px;\n  background: #c52d2f;\n  color: #fff;\n  border-radius: 4px;\n  margin-top: 25px;\n  display: inline-block;\n}\n\n#main-slider .carousel .slider-img{\n  text-align: right;\n  position: absolute;\n}\n\n\n#main-slider .carousel .item {\n  background-position: 50%;\n  background-repeat: no-repeat;\n  background-size: cover;\n  left: 0 !important;\n  opacity: 0;\n  top: 0;\n  position: absolute;\n  width: 100%;\n  display: block !important;\n  height: 730px;\n  -webkit-transition: opacity ease-in-out 500ms;\n  -moz-transition: opacity ease-in-out 500ms;\n  -o-transition: opacity ease-in-out 500ms;\n  transition: opacity ease-in-out 500ms;\n}\n\n#main-slider .carousel .item:first-child {\n  top: auto;\n  position: relative;\n}\n\n#main-slider .carousel .item.active {\n  opacity: 1;\n  -webkit-transition: opacity ease-in-out 500ms;\n  -moz-transition: opacity ease-in-out 500ms;\n  -o-transition: opacity ease-in-out 500ms;\n  transition: opacity ease-in-out 500ms;\n  z-index: 1;\n}\n\n#main-slider .prev,\n#main-slider .next {\n  position: absolute;\n  top: 50%;\n  background-color: #c52d2f;\n  color: #fff;\n  display: inline-block;\n  margin-top: -25px;\n  height: 40px;\n  line-height: 40px;\n  width: 40px;\n  line-height: 40px;\n  text-align: center;\n  border-radius: 4px;\n  z-index: 5;\n}\n\n#main-slider .prev:hover,\n#main-slider .next:hover {\n  background-color: #000;\n}\n\n#main-slider .prev {\n  left: 10px;\n}\n\n#main-slider .next {\n  right: 10px;\n}\n\n#main-slider .carousel-indicators li {\n  width: 20px;\n  height: 20px;\n  background-color: #fff;\n  margin: 0 15px 0 0;\n  position: relative;\n}\n\n#main-slider .carousel-indicators li:after {\n  position: absolute;\n  content: \"\";\n  width: 24px;\n  height: 24px;\n  border-radius: 100%;\n  background: rgba(0, 0, 0, 0);\n  border: 1px solid #FFF;\n  left: -3px;\n  top: -3px;\n}\n\n#main-slider .carousel-indicators .active{\n  width: 20px;\n  height: 20px;\n  background-color: #c52d2f;\n   margin: 0 15px 0 0;\n   border: 1px solid #c52d2f;\n   position: relative;\n}\n\n#main-slider .carousel-indicators .active:after {\n  position: absolute;\n  content: \"\";\n  width: 24px;\n  height: 24px;\n  border-radius: 100%;\n  background: #c52d2f;\n  border: 1px solid #c52d2f;\n  left: -3px;\n  top: -3px;\n}\n\n#main-slider .active .animation.animated-item-1 {\n  -webkit-animation: fadeInUp 300ms linear 300ms both;\n  -moz-animation: fadeInUp 300ms linear 300ms both;\n  -o-animation: fadeInUp 300ms linear 300ms both;\n  -ms-animation: fadeInUp 300ms linear 300ms both;\n  animation: fadeInUp 300ms linear 300ms both;\n}\n\n#main-slider .active .animation.animated-item-2 {\n  -webkit-animation: fadeInUp 300ms linear 600ms both;\n  -moz-animation: fadeInUp 300ms linear 600ms both;\n  -o-animation: fadeInUp 300ms linear 600ms both;\n  -ms-animation: fadeInUp 300ms linear 600ms both;\n  animation: fadeInUp 300ms linear 600ms both;\n}\n\n#main-slider .active .animation.animated-item-3 {\n  -webkit-animation: fadeInUp 300ms linear 900ms both;\n  -moz-animation: fadeInUp 300ms linear 900ms both;\n  -o-animation: fadeInUp 300ms linear 900ms both;\n  -ms-animation: fadeInUp 300ms linear 900ms both;\n  animation: fadeInUp 300ms linear 900ms both;\n}\n\n#main-slider .active .animation.animated-item-4 {\n  -webkit-animation: fadeInUp 300ms linear 1200ms both;\n  -moz-animation: fadeInUp 300ms linear 1200ms both;\n  -o-animation: fadeInUp 300ms linear 1200ms both;\n  -ms-animation: fadeInUp 300ms linear 1200ms both;\n  animation: fadeInUp 300ms linear 1200ms both;\n}\n\n#feature {\n  background: #f2f2f2;\n  padding-bottom: 40px;\n}\n\n.features{\n  padding: 0;\n}\n\n.feature-wrap {\n  margin-bottom: 35px;\n  overflow: hidden;\n}\n\n.feature-wrap h2{\n  margin-top: 10px;\n}\n\n.feature-wrap .pull-left {\n  margin-right: 25px;\n}\n\n.feature-wrap i{\n  font-size: 48px;\n  height: 110px;\n  width: 110px;\n  margin: 3px;\n  border-radius: 100%;\n  line-height: 110px;\n  text-align:center;\n  background: #ffffff;\n  color: #c52d2f;\n  border: 3px solid #ffffff;\n  box-shadow: inset 0 0 0 5px #f2f2f2;\n  -webkit-box-shadow: inset 0 0 0 5px #f2f2f2;\n  -webkit-transition: 500ms;\n  -moz-transition: 500ms;\n  -o-transition: 500ms;\n  transition: 500ms;\n  float: left;\n  margin-right: 25px;\n}\n\n.feature-wrap i:hover {\n  background: #c52d2f;\n  color: #fff;\n  box-shadow: inset 0 0 0 5px #c52d2f;\n  -webkit-box-shadow: inset 0 0 0 5px #c52d2f;\n  border: 3px solid #c52d2f;\n}\n\n#recent-works .col-xs-12.col-sm-4.col-md-3{\n  padding: 0;\n}\n\n#recent-works{\n    padding-bottom: 70px;\n}\n\n.recent-work-wrap {\n  position: relative;\n}\n\n.recent-work-wrap img{\n  width: 100%;\n}\n\n.recent-work-wrap .recent-work-inner{\n  top: 0;\n  background: transparent;\n  opacity: .8;\n  width: 100%;\n  border-radius: 0;\n  margin-bottom: 0;\n}\n\n.recent-work-wrap .recent-work-inner h3{\n  margin: 10px 0;\n}\n\n.recent-work-wrap .recent-work-inner h3 a{\n  font-size: 24px;\n  color: #fff;\n}\n\n.recent-work-wrap .overlay {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  opacity: 0;\n  border-radius: 0;\n  background: #c52d2f;\n  color: #fff;\n  vertical-align: middle;\n  -webkit-transition: opacity 500ms;\n  -moz-transition: opacity 500ms;\n  -o-transition: opacity 500ms;\n  transition: opacity 500ms;  \n  padding: 30px;\n}\n\n.recent-work-wrap .overlay .preview {\n  bottom: 0;\n  display: inline-block;\n  height: 35px;\n  line-height: 35px;\n  border-radius: 0;\n  background: transparent;\n  text-align: center;\n  color: #fff;\n}\n\n.recent-work-wrap:hover .overlay {\n  opacity: 1;\n}\n\n#services {\n  background: #000 url(" + __webpack_require__(214) + ");\n  background-size: cover;\n}\n\n#services .lead,\n#services h2{\n  color: #fff;\n}\n\n.services-wrap {\n  padding: 40px 30px;\n  background: #fff;\n  border-radius: 4px;\n  margin: 0 0 40px;\n}\n\n.services-wrap h3 {\n  font-size: 20px;\n  margin: 10px 0;\n}\n\n.services-wrap .pull-left {\n  margin-right: 20px;\n}\n\n#middle {\n  background: #f2f2f2;\n}\n\n.skill h2{\n  margin-bottom: 25px;\n}\n\n.progress-wrap{\n  position: relative;\n}\n\n.progress .color1,\n.progress .color1 .bar-width{\n  background: #2d7da4;\n}\n\n.progress .color2,\n.progress .color2 .bar-width{\n  background: #6aa42f;\n}\n\n.progress .color3,\n.progress .color3 .bar-width{\n  background: #ffcc33;\n}\n\n.progress .color4,\n.progress .color4 .bar-width{\n  background: #db3615;\n}\n\n.progress, \n.progress-bar {\n  height: 15px;\n  line-height: 15px;\n  background: #e6e6e6;\n  -webkit-box-shadow: none;\n  -moz-box-shadow: none;\n  box-shadow: none;\n  border-radius: 0;\n  overflow: visible;\n  text-align: right;\n}\n\n.progress{\n  position: relative;\n}\n\n.progress .bar-width{\n  position: absolute;\n  width: 40px;\n  height: 20px;\n  line-height: 20px;\n  text-align: center;\n  font-size: 12px;\n  font-weight: 700;\n  top: -30px;\n  border-radius: 2px;\n  margin-left: -30px;\n}\n\n.progress span{\n  position: relative;\n}\n\n.progress span:before{\n  content: \" \";\n  position: absolute;\n  width: auto;\n  height: auto;\n  border-width: 8px 5px;\n  border-style: solid;\n  bottom: -15px;\n  right: 8px;\n}\n\n.progress .color1 span:before{\n  border-color: #2d7da4 transparent transparent transparent;\n}\n\n.progress .color2 span:before{\n  border-color: #6aa42f transparent transparent transparent;\n}\n\n.progress .color3 span:before{\n  border-color: #ffcc33 transparent transparent transparent;\n}\n\n.progress .color4 span:before{\n  border-color: #db3615 transparent transparent transparent;\n}\n\n.accordion h2{\n  margin-bottom: 25px;\n}\n\n.panel-default{\n  border-color: transparent;\n}\n\n.panel-default>.panel-heading,\n.panel{\n  background-color: #e6e6e6; \n  border:0 none;\n  box-shadow:none;\n}\n\n.panel-default>.panel-heading+.panel-collapse .panel-body{\n  background: #fff;\n  color: #858586;\n}\n\n.panel-body{\n  padding: 20px 20px 10px;\n}\n\n.panel-group .panel+.panel{\n  margin-top: 0;\n  border-top: 1px solid #d9d9d9;\n}\n\n.panel-group .panel{\n  border-radius: 0;\n}\n\n.panel-heading{\n  border-radius: 0;\n}\n\n.panel-title>a{\n  color: #4e4e4e;\n}\n\n.accordion-inner img{\n  border-radius: 4px;\n}\n\n.accordion-inner h4{\n  margin-top: 0;\n}\n\n.panel-heading.active{\n  background: #1f1f20;\n}\n\n.panel-heading.active .panel-title>a{\n  color:#fff;\n}\n\na.accordion-toggle  i{\n  width: 45px;\n  line-height: 44px;\n  font-size: 20px;\n  margin-top: -10px;\n  text-align: center;\n  margin-right: -15px;\n  background: #c9c9c9;\n}\n\n.panel-heading.active a.accordion-toggle i{\n  background: #c52d2f;\n  color: #fff;\n}\n\n.panel-heading.active a.accordion-toggle.collapsed i{\n  background: #c52d2f;\n  color: #fff;\n}\n\n.nav-tabs>li{\n  margin-bottom: 0px;\n  border-bottom: 1px solid #e6e6e6;\n}\n\n.nav-tabs{\n  border-bottom: transparent;\n  border-right: 1px solid #e6e6e6;\n}\n\n.nav-tabs>li>a {\n  background: #f5f5f5;\n  color: #666;\n  border-radius: 0;\n  border: 0 none;\n  line-height: 24px;\n  margin-right:0;\n  padding: 13px 15px;\n}\n\n.nav-tabs li:last-child{\n  border-bottom: 0 none;\n} \n\n.nav-stacked>li+li{\n  margin-top: 0;\n}\n\n.nav-tabs>li>a:hover{\n  background: #1f1f20;\n  color:#fff;\n}\n\n.nav-tabs>li.active>a, \n.nav-tabs>li.active>a:hover, \n.nav-tabs>li.active>a:focus {\n  border: 0;\n  color:#fff;\n  background: #1f1f20;\n  position: relative;\n}\n\n.nav-tabs>li.active>a:after {\n  position: absolute;\n  content:  \"\";\n  width: auto;\n  height: auto;\n  border-style:solid;\n  border-color: transparent transparent transparent #1f1f20;\n  border-width: 25px 22px;\n  right: -44px;\n  top:0;\n}\n\n.tab-wrap{\n  border:1px solid #e6e6e6;\n  margin-bottom: 20px;\n}\n\n.tab-content{\n  padding: 20px;\n}\n\n.tab-content h2{\n  margin-top: 0;\n}\n\n.tab-content img{\n  border-radius: 4px;\n}\n\n.testimonial h2{\n  margin-top: 0;\n}\n\n.testimonial-inner {\n  color:#858586;\n  font-size: 14px;\n}\n\n.testimonial-inner .pull-left{\n  border-right: 1px solid #e7e7e7;\n  padding-right: 15px;\n  position: relative;\n}\n\n.testimonial-inner .pull-left:after{\n  content: \"\";\n  position: absolute;\n  width: 9px;\n  height: 9px;\n  top: 50%;\n  margin-top: -5px;\n  background: #FFF;\n  -webkit-transform: rotate(45deg);\n  border: 1px solid #e7e7e7;\n  right: -5px;\n  border-left: 0 none;\n  border-bottom: 0 none;\n}\n\n#partner {\n  background: url(" + __webpack_require__(215) + ") 50% 50% no-repeat;\n  background-size: cover;\n}\n\n#partner {\n  color: #fff;\n  text-align: center;\n}\n\n#partner h2, \n#partner h3 {\n  color: #fff;\n}\n\n.partners ul {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\n\n.partners ul li{\n  display: inline-block;\n  float: left;\n  width: 20%;\n}\n\n#conatcat-info{\n  background: #fff url(" + __webpack_require__(216) + ") no-repeat 90% 0;\n  padding: 30px 0;\n}\n\n.contact-info i{\n  width: 60px;\n  height: 60px;\n  font-size: 40px;\n  line-height: 60px;\n  color: #fff;\n  background: #000;\n  text-align: center;\n  border-radius: 10px;\n}\n\n.contact-info h2{\n  margin-top: 0;\n  color: #000;\n}\n\n.contact-info{\n  color:#000;\n}\n\n/*************************\n********* About Us Page CSS ******\n**************************/\n\n.about-us {\n  margin-top: 110px;\n  margin-bottom: -110px;\n}\n\n.about-us h2, \n.skill_text h2 {\n  color:#4e4e4e;\n  font-size: 30px;\n  font-weight: 600;\n}\n\n.about-us p {\n  color:#4e4e4e;\n}\n\n#carousel-slider {\n  position: relative;\n}\n\n#carousel-slider .carousel-indicators {\n  bottom: -25px;\n}\n\n#carousel-slider .carousel-indicators li {\n  border: 1px solid #ffbd20;\n}\n\n#carousel-slider a i {\n  border: 1px solid #777;\n  border-radius:50%;\n  font-size: 28px;\n  height: 50px;\n  padding: 8px;\n  position: absolute;\n  top: 50%;\n  width: 50px;\n  color:#777;\n}\n\n#carousel-slider a i:hover {\n  background:#bfbfbf;\n  color:#fff;\n  border: 1px solid #bfbfbf;\n}\n\n#carousel-slider \n.carousel-control {\n  width:inherit;\n}\n\n#carousel-slider .carousel-control.left i {\n  left:-25px\n}\n\n#carousel-slider .carousel-control.right i {\n  right: -25px;\n}\n\n#carousel-slider\n.carousel-control.left, \n#carousel-slider\n.carousel-control.right {\n  background: none;\n}\n\n.skill_text {\n  display: block;\n  margin-bottom: 60px;\n  margin-top: 25px;\n  overflow: hidden;\n}\n\n.sinlge-skill {\n  background:#f2f2f2;\n  border-radius: 100%;\n  color: #FFFFFF;\n  font-size: 22px;\n  font-weight: bold;\n  height: 200px;\n  position: relative;\n  width: 200px;\n  text-transform: uppercase;\n  overflow: hidden;\n  margin: 30px 0;\n\n}\n\n.sinlge-skill p em {\n  color: #FFFFFF;\n  font-size: 38px;\n}\n\n.sinlge-skill p {\n  line-height: 1;\n}\n\n.joomla-skill, \n.html-skill, \n.css-skill, \n.wp-skill {\n  position: absolute;\n  height: 100%;\n  bottom: 0;\n  width:100%;\n  border-radius: 100%;\n  padding: 70px 0;\n  text-align: center;\n}\n\n\n.joomla-skill {\n  background: rgb(242,242,242); /* Old browsers */\n  background: -moz-linear-gradient(top, rgba(242,242,242,1) 0%, rgba(242,242,242,1) 28%, rgba(45,125,164,1) 28%); /* FF3.6+ */\n  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(242,242,242,1)), color-stop(28%,rgba(242,242,242,1)), color-stop(28%,rgba(45,125,164,1))); /* Chrome,Safari4+ */\n  background: -webkit-linear-gradient(top, rgba(242,242,242,1) 0%,rgba(242,242,242,1) 28%,rgba(45,125,164,1) 28%); /* Chrome10+,Safari5.1+ */\n  background: -o-linear-gradient(top, rgba(242,242,242,1) 0%,rgba(242,242,242,1) 28%,rgba(45,125,164,1) 28%); /* Opera 11.10+ */\n  background: -ms-linear-gradient(top, rgba(242,242,242,1) 0%,rgba(242,242,242,1) 28%,rgba(45,125,164,1) 28%); /* IE10+ */\n  background: linear-gradient(to bottom, rgba(242,242,242,1) 0%,rgba(242,242,242,1) 28%,rgba(45,125,164,1) 28%); /* W3C */\n  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#2d7da4',GradientType=0 ); /* IE6-9 */    \n}\n\n.html-skill {\n  background: rgb(242,242,242); /* Old browsers */\n  background: -moz-linear-gradient(top, rgba(242,242,242,1) 0%, rgba(242,242,242,1) 9%, rgba(106,164,47,1) 9%); /* FF3.6+ */\n  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(242,242,242,1)), color-stop(9%,rgba(242,242,242,1)), color-stop(9%,rgba(106,164,47,1))); /* Chrome,Safari4+ */\n  background: -webkit-linear-gradient(top, rgba(242,242,242,1) 0%,rgba(242,242,242,1) 9%,rgba(106,164,47,1) 9%); /* Chrome10+,Safari5.1+ */\n  background: -o-linear-gradient(top, rgba(242,242,242,1) 0%,rgba(242,242,242,1) 9%,rgba(106,164,47,1) 9%); /* Opera 11.10+ */\n  background: -ms-linear-gradient(top, rgba(242,242,242,1) 0%,rgba(242,242,242,1) 9%,rgba(106,164,47,1) 9%); /* IE10+ */\n  background: linear-gradient(to bottom, rgba(242,242,242,1) 0%,rgba(242,242,242,1) 9%,rgba(106,164,47,1) 9%); /* W3C */\n  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#6aa42f',GradientType=0 ); /* IE6-9 */\n}\n\n.css-skill {\n  background: rgb(242,242,242); /* Old browsers */\n  background: -moz-linear-gradient(top, rgba(242,242,242,1) 0%, rgba(242,242,242,1) 32%, rgba(255,189,32,1) 32%); /* FF3.6+ */\n  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(242,242,242,1)), color-stop(32%,rgba(242,242,242,1)), color-stop(32%,rgba(255,189,32,1))); /* Chrome,Safari4+ */\n  background: -webkit-linear-gradient(top, rgba(242,242,242,1) 0%,rgba(242,242,242,1) 32%,rgba(255,189,32,1) 32%); /* Chrome10+,Safari5.1+ */\n  background: -o-linear-gradient(top, rgba(242,242,242,1) 0%,rgba(242,242,242,1) 32%,rgba(255,189,32,1) 32%); /* Opera 11.10+ */\n  background: -ms-linear-gradient(top, rgba(242,242,242,1) 0%,rgba(242,242,242,1) 32%,rgba(255,189,32,1) 32%); /* IE10+ */\n  background: linear-gradient(to bottom, rgba(242,242,242,1) 0%,rgba(242,242,242,1) 32%,rgba(255,189,32,1) 32%); /* W3C */\n  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#ffbd20',GradientType=0 ); /* IE6-9 */\n}\n\n.wp-skill {\n  background: rgb(242,242,242); /* Old browsers */\n  background: -moz-linear-gradient(top, rgba(242,242,242,1) 0%, rgba(242,242,242,1) 19%, rgba(219,54,21,1) 19%); /* FF3.6+ */\n  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(242,242,242,1)), color-stop(19%,rgba(242,242,242,1)), color-stop(19%,rgba(219,54,21,1))); /* Chrome,Safari4+ */\n  background: -webkit-linear-gradient(top, rgba(242,242,242,1) 0%,rgba(242,242,242,1) 19%,rgba(219,54,21,1) 19%); /* Chrome10+,Safari5.1+ */\n  background: -o-linear-gradient(top, rgba(242,242,242,1) 0%,rgba(242,242,242,1) 19%,rgba(219,54,21,1) 19%); /* Opera 11.10+ */\n  background: -ms-linear-gradient(top, rgba(242,242,242,1) 0%,rgba(242,242,242,1) 19%,rgba(219,54,21,1) 19%); /* IE10+ */\n  background: linear-gradient(to bottom, rgba(242,242,242,1) 0%,rgba(242,242,242,1) 19%,rgba(219,54,21,1) 19%); /* W3C */\n  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#db3615',GradientType=0 ); /* IE6-9 */\n}\n\n.skill-wrap {\n  display: block;\n  overflow: hidden;\n  margin: 60px 0;\n}\n\n.team h4 {\n  margin-top: 0;\n  text-transform: uppercase;\n}\n\n.team h5 {\n  font-weight: 300;\n}\n\n.single-profile-top, \n.single-profile-bottom {\n  font-weight: 400;\n  line-height: 24px;\n}\n\n.single-profile-top, \n.single-profile-bottom  {\n  border: 1px solid #ddd;\n  padding: 15px;\n  position: relative;\n}\n\n.media_image {\n  margin-bottom: 10px;\n}\n\n.team .btn {\n  background:transparent;\n  font-size: 12px;\n  font-weight: 300;\n  margin-bottom: 3px;\n  padding: 1px 5px;\n  text-transform: uppercase;\n  border:1px solid#ddd;\n  margin-right: 3px;\n}\n\n\nul.social_icons,\nul.tag {\n  list-style: none;\n  padding: 0;\n  margin: 10px 0;\n  display: block;\n}\n\nul.social_icons li,\nul.tag li {\n  display: inline-block;\n  margin-right: 5px;\n}\n\nul.social_icons li  a i{\n  border-radius: 50%;\n  color: #FFFFFF;\n  height: 25px;\n  line-height: 25px;\n  font-size: 12px;\n  padding: 0;\n  text-align: center;\n  width: 25px;\n  opacity:.8;\n}\n\n\n.team .social_icons .fa-facebook:hover, \n.team .social_icons .fa-twitter:hover, \n.team .social_icons .fa-google-plus:hover {\n  transform: rotate(360deg);\n  -ms-transform:rotate(360deg);\n  -webkit-transform:rotate(360deg); \n  transition-duration:2s;\n  transition-property: all;\n  transition-timing-function: ease;\n  opacity:1;\n  transition: all 0.9s ease 0s;\n  -moz-transition: all 0.9s ease 0s;\n  -webkit-transition: all 0.9s ease 0s;\n  -o-transition: all 0.9s ease 0s;\n}\n\n.team .social_icons .fa-facebook {\n  background: #0182c4;\n}\n\n.team .social_icons .fa-twitter {\n  background: #20B8FF\n}\n\n.team .social_icons .fa-google-plus {\n  background: #D34836\n}\n\n\n.team-bar .first-one-arrow {\n  float: left;\n  margin-right: 30px;\n  width: 2%;\n}\n\n.team-bar .first-arrow {\n  float: left;\n  margin-left: 5px;\n  margin-right: 35px;\n  width: 22%;\n}\n\n.team-bar .second-arrow {\n  float: left;\n  margin-left: 5px;\n  width: 21%;\n}\n\n.team-bar .third-arrow {\n  float: left;\n  margin-left: 40px;\n  margin-right: 12px;\n  width: 22%;\n}\n\n.team-bar .fourth-arrow {\n  float: left;\n  margin-left: 25px;\n  width: 20%;\n}\n\n.team-bar .first-one-arrow hr {\n  border-bottom: 1px solid #2D7DA4;\n  border-top: 1px solid #2D7DA4;\n }\n\n.team-bar .first-arrow hr {\n  border-bottom: 1px solid #2D7DA4;\n  border-top: 1px solid #2D7DA4;\n }\n\n.team-bar .second-arrow hr {\n  border-bottom: 1px solid #6aa42f;\n  border-top: 1px solid #6aa42f;\n}\n\n.team-bar .third-arrow hr {\n  border-bottom: 1px solid #FFBD20;\n  border-top: 1px solid #FFBD20;\n\n}\n\n.team-bar .fourth-arrow hr {\n  border-bottom: 1px solid #db3615;\n  border-top: 1px solid #db3615;\n}\n\n.team-bar {\n  margin-bottom: 15px;\n  margin-top: 30px;\n  position: relative;\n}\n\n.team-bar i {\n  border-radius: 50%;\n  color: #FFFFFF;\n  display: block;\n  height: 24px;\n  line-height: 24px;\n  margin-top: -32px;\n  overflow: hidden;\n  padding: 0;\n  text-align: center;\n  width: 24px;\n  position: absolute;\n}\n\n.team-bar .first-arrow .fa-angle-up {\n  background:#2D7DA4;\n  margin-left:-33px\n }\n\n.team-bar .second-arrow .fa-angle-down {\n  background:#6AA42F;\n  margin-left: -33px;\n}\n\n.team-bar .third-arrow .fa-angle-up {\n  background:#FFBD20;\n  margin-left: -32px;\n}\n\n.team-bar .fourth-arrow .fa-angle-down {\n  background:#db3615;\n  margin-left: -32px;\n}\n\n.team .single-profile-top:before, \n.team .single-profile-top:after {\n  content: \"\";\n  position: absolute;\n  width: 0;\n  height: 0;\n  border-style: solid;\n}\n\n.team .single-profile-top:before {\n  left:26px;\n  bottom: -20px;\n  border-width: 10px;\n  border-color:#fff transparent transparent transparent;\n  z-index: 1;\n}\n\n\n.team .single-profile-top:after {\n  left: 25px;\n  bottom: -22px;\n  border-style: solid;\n  border-width: 11px;\n  border-color:#ddd transparent transparent transparent;\n  z-index: 0;\n}\n\n.team .single-profile-bottom:before,\n.team .single-profile-bottom:after {\n  position: absolute;\n  content:\"\";\n  width: 0;\n  height: 0;\n  border-style: solid;\n}\n\n.team .single-profile-bottom:before {\n  left:30px;\n  top: -20px;\n  border-width: 10px;\n  border-color: transparent transparent #fff transparent;\n  z-index: 1;\n}\n\n.team .single-profile-bottom:after {\n  left: 29px;\n  top: -22px;\n  border-style: solid;\n  border-width: 11px;\n  border-color: transparent transparent #DDD transparent;\n  z-index: 0;\n}\n\n/***********************\n****Service page css****\n***********************/\n\n.services {\n  padding: 0;\n}\n\n.get-started {\n  background: none repeat scroll 0 0 #F3F3F3;\n  border-radius: 3px;\n  padding-bottom: 30px;\n  position: relative;\n  margin-bottom: 18px;\n  margin-top: 60px;\n}\n\n.get-started h2 {\n  padding-top: 30px;\n  margin-bottom: 20px;\n}\n\n.request {\n  bottom: -15px;\n  left: 50%;\n  position: absolute;\n  margin-left: -110px;\n}\n\n.request h4 {\n  position: absolute;\n  width: 220px;\n  position:relative;\n}\n\n.request h4 a{\n  background:#c52d2f;\n  color: #fff;\n  font-size: 14px;\n  font-weight: normal;\n  border-radius: 3px;\n  padding: 5px 15px;\n}\n\n.request h4:after {\n  border-color: #c52d2f transparent transparent;\n  border-style: solid;\n  border-width: 12px;\n  bottom: -18px;\n  content: \"\";\n  height: 0;\n  position: absolute;\n  right: 13px;\n  z-index: -99999;\n}\n\n.request h4:before {\n  border-color: #c52d2f transparent transparent;\n  border-style: solid;\n  border-width: 12px;\n  bottom: -18px;\n  content: \"\";\n  height: 0;\n  left: 13px;\n  position: absolute;\n  z-index: -99999;\n}\n\n.clients-area {\n  padding: 60px;\n}\n\n.clients-comments {\n    background-image: url(" + __webpack_require__(217) + ");\n    background-position: center 118px;\n    background-repeat: no-repeat;\n    margin-bottom: 100px;\n}\n\n.clients-comments img {\n  background:#DDDDDD;\n  border: 1px solid #DDDDDD;\n  height: 182px;\n  padding: 3px;\n  width: 182px;\n  transition: all 0.9s ease 0s;\n  -moz-transition: all 0.9s ease 0s;\n  -webkit-transition: all 0.9s ease 0s;\n  -o-transition: all 0.9s ease 0s;\n}\n\n.clients-comments h3 {\n  margin-top: 55px;\n  font-weight: 300;\n  padding: 0 40px;\n}\n\n.clients-comments h4 {\n  font-weight: 300;\n  margin-top: 15px;\n}\n\n\n.clients-comments  h4  span {\n  font-weight: 700;\n  font-style: oblique;\n}\n\n.footer {\n  background: none repeat scroll 0 0 #2E2E2E;\n  border-top: 5px solid #C52D2F;\n  height: 84px;\n  margin-top: 110px;\n}\n\n.footer_left {\n  padding: 10px;\n}\n\n.text-left {\n  color: #FFFFFF;\n  font-size: 12px;\n  margin-top: 15px;\n}\n\n/*************************\n********* Portfolio CSS ******\n**************************/\n\n#portfolio_page {\n  margin-top: 115px;\n  padding-bottom: 0;\n}\n\n.portfolio-items, \n.portfolio-filter {\n  list-style: none outside none;\n  margin: 0 0 40px 0;\n  padding: 0;\n}\n\n.portfolio-filter > li {\n  display: inline-block;\n}\n\n.portfolio-filter > li a {\n  background: none repeat scroll 0 0 #FFFFFF;\n  font-size: 14px;\n  font-weight: 400;\n  margin-right: 20px;\n  text-transform: uppercase;\n  transition: all 0.9s ease 0s;\n  -moz-transition: all 0.9s ease 0s;\n  -webkit-transition: all 0.9s ease 0s;\n  -o-transition: all 0.9s ease 0s;\n  border: 1px solid #F2F2F2;\n  outline: none;\n  border-radius: 3px;\n}\n\n.portfolio-filter > li a:hover,\n.portfolio-filter > li a.active{\n  color:#fff;\n  background: #c52d2f;\n  border: 1px solid #c52d2f;\n  box-shadow: none;\n  -webkit-box-shadow: none;\n}\n\n.portfolio-items > li {\n  float: left;\n  padding: 0;\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n}\n\n.portfolio-item {\n  margin: 0;\n  padding:0;\n}\n\n/* Start: Recommended Isotope styles */\n/**** Isotope Filtering ****/\n.isotope-item {\n  z-index: 2;\n}\n\n.isotope-hidden.isotope-item {\n  pointer-events: none;\n  z-index: 1;\n}\n\n/**** Isotope CSS3 transitions ****/\n.isotope,\n.isotope .isotope-item {\n  -webkit-transition-duration: 0.8s;\n  -moz-transition-duration: 0.8s;\n  -ms-transition-duration: 0.8s;\n  -o-transition-duration: 0.8s;\n  transition-duration: 0.8s;\n}\n\n.isotope {\n  -webkit-transition-property: height, width;\n  -moz-transition-property: height, width;\n  -ms-transition-property: height, width;\n  -o-transition-property: height, width;\n  transition-property: height, width;\n}\n\n.isotope .isotope-item {\n  -webkit-transition-property: -webkit-transform, opacity;\n  -moz-transition-property: -moz-transform, opacity;\n  -ms-transition-property: -ms-transform, opacity;\n  -o-transition-property: -o-transform, opacity;\n  transition-property: transform, opacity;\n}\n\n/**** disabling Isotope CSS3 transitions ****/\n.isotope.no-transition,\n.isotope.no-transition .isotope-item,\n.isotope .isotope-item.no-transition {\n  -webkit-transition-duration: 0s;\n  -moz-transition-duration: 0s;\n  -ms-transition-duration: 0s;\n  -o-transition-duration: 0s;\n  transition-duration: 0s;\n}\n\n/* End: Recommended Isotope styles */\n/* disable CSS transitions for containers with infinite scrolling*/\n.isotope.infinite-scrolling {\n  -webkit-transition: none;\n  -moz-transition: none;\n  -ms-transition: none;\n  -o-transition: none;\n  transition: none;\n}\n\n\n/**************************\n********* Pricing Table CSS *\n**************************/\n\n.pricing_heading {\n  margin-top: 120px\n}\n\n.pricing_heading h2, \n.pricing_heading p {\n  color:#4e4e4e;\n}\n\n.pricing-area h1 {\n  font-weight: 300;\n  margin-top: 0;\n  margin-bottom: 15px;\n}\n\n.pricing-area span {\n  font-weight: 700;\n  font-size: 18px;\n}\n\n.pricing-area h3, \n.pricing-area span  {\n  color: #fff;\n}\n\n.plan {\n  position: relative;\n  margin-bottom: 70px;\n}\n\n.pricing-area ul {\n  background:#FAFAFA;\n  padding: 0;\n  margin: 0;\n}\n\n.pricing-area ul li {\n  list-style: none;\n  padding: 15px 0;\n  font-size: 16px;\n  font-weight: 400;\n}\n\n.pricing-area ul li:nth-child(even){\n  background:#f5f5f5\n}\n\n.pricing-area .price-three img, \n.pricing-area .price-six img {\n  position: absolute;\n  right: 15px;\n  top: 0;\n}\n\n.pricing-area .heading-one, \n.pricing-area .heading-two, \n.pricing-area .heading-three {\n  padding:17px 0;\n  border-radius:2px 2px 0 0;\n} \n\n.pricing-area .heading-one, \n.pricing-area .heading-two, \n.pricing-area .heading-three, \n.pricing-area .heading-four, \n.pricing-area .heading-five, \n.pricing-area .heading-six, \n.pricing-area .heading-seven {\n  margin-left: -10px\n}\n\n\n.pricing-area .heading-one, \n.pricing-area .price-one .plan-action .btn-primary {\n  background: #e24f43\n}\n\n.pricing-area .heading-two, \n.pricing-area .price-two .plan-action .btn-primary {\n  background:#27AE60;\n}\n\n.pricing-area .heading-three,\n.pricing-area .price-three .plan-action .btn-primary {\n  background: #f39c12;\n}\n\n.pricing-area .heading-four, \n.pricing-area .price-four .plan-action .btn-primary {\n  background: #5c5c5c\n}\n\n.pricing-area .heading-five, \n.pricing-area .price-five .plan-action .btn-primary {\n  background: #5c5c5c\n}\n\n.pricing-area .heading-six, \n.pricing-area .price-six .plan-action .btn-primary {\n  background: #e24f43\n;\n}\n\n.pricing-area .heading-seven, \n.pricing-area .price-seven .plan-action .btn-primary {\n  background: #5c5c5c\n}\n\n.pricing-area .bg{\n background: #fafafa \n}\n\n.pricing-area .heading-one h3:before {\n  border-color: #bf4539 transparent transparent;\n}\n\n.pricing-area .heading-two h3:before {\n  border-color: #1f8c4d transparent transparent;\n}\n\n.pricing-area .heading-three h3:before {\n  border-color: #d4880f transparent transparent;\n}\n\n.pricing-area .heading-four h3:before {\n  border-color: #424242 transparent transparent;\n}\n\n.pricing-area .heading-five h3:before {\n  border-color: #424242 transparent transparent;\n}\n\n.pricing-area .heading-six h3:before {\n  border-color: #bf4539 transparent transparent;\n}\n\n.pricing-area .heading-seven h3:before {\n  border-color: #424242 transparent transparent;\n}\n\n.pricing-area h3:before {\n  border-color: #D4880F transparent transparent;\n  border-radius: 5px 0 0 0px;\n  border-style: solid;\n  border-width: 12px;\n  content: \"\";\n  height: 0;\n  left: 4px;\n  position: absolute;\n  top: 78px;\n  width: 0;\n  z-index: -999;\n}\n\n.small-pricing h3:after {\n  height:94px;\n}\n\n.small-pricing h3:before {\n  top: 74px;\n}\n\n.plan-action {\n  height: 40px;\n}\n\n.pricing-area .plan-action .btn-primary {\n  position: relative;\n  padding:5px 20px;\n  color: #fff\n;\n  margin-top: 5px;\n}\n\n.pricing-area .plan-action .btn-primary:before {\n  border-color: #E24F43 transparent transparent;\n  border-radius: 5px 0 0 0;\n  border-style: solid;\n  border-width: 12px;\n  bottom: -12px;\n  content: \"\";\n  height: 0;\n  left: -9px;\n  position: absolute;\n  width: 0;\n  z-index: -1;\n}\n\n.pricing-area .plan-action .btn-primary:after {\n  border-color: #E24F43 transparent transparent;\n  border-radius: 5px 0 0 0;\n  border-style: solid;\n  border-width: 12px;\n  bottom: -12px;\n  content: \"\";\n  height: 0;\n  position: absolute;\n  right: -9px;\n  width: 0;\n  z-index: -1;\n}\n\n.pricing-area .price-two .plan-action .btn-primary:before, \n.pricing-area .price-two .plan-action .btn-primary:after {\n  border-color: #1f8c4d transparent transparent;\n}\n\n.pricing-area .price-three .plan-action .btn-primary:before, \n.pricing-area .price-three .plan-action .btn-primary:after {\n  border-color: #d4880f transparent transparent;\n}\n\n.pricing-area .price-four .plan-action .btn-primary:before, \n.pricing-area .price-four .plan-action .btn-primary:after, \n.pricing-area .price-five .plan-action .btn-primary:before, \n.pricing-area .price-five .plan-action .btn-primary:after, \n.pricing-area .price-seven .plan-action .btn-primary:before, \n.pricing-area .price-seven .plan-action .btn-primary:after  {\n  border-color: #424242 transparent transparent;\n  right: -9px;\n}\n\n.pricing-area .price-six .plan-action .btn-primary:before, \n.pricing-area .price-six .plan-action .btn-primary:after {\n  border-color: #bf4539 transparent transparent;\n  right: -9px;\n}\n\n\n/*************************\n********* Contact Us CSS ******\n**************************/\n\n.gmap-area {\n  background-image: url(" + __webpack_require__(218) + ");\n  background-position: 0 0;\n  background-repeat: no-repeat;\n  background-size: cover;\n  padding: 70px 0;\n}\n\n.gmap-area .gmap iframe {\n  border-radius: 50%;\n  height: 280px;\n  width: 300px;\n}\n\n.gmap{\n    border: 10px solid #f6f5f0;\n    border-radius: 50%;\n    height: 300px;\n    width: 300px;\n    box-shadow: 0px 0px 3px 3px #e7e4dc;\n    overflow: hidden;\n    position: relative;\n    margin: 0 auto;\n}\n\n.gmap-area .map-content ul {\n  list-style: none; \n}\n\n.gmap-area .map-content address h5{\n  font-weight: 700;\n  /* font-size: 16px; */\n}\n\n#contact-page{\n  padding-top: 0;\n}\n\n#contact-page .contact-form \n.form-group label {\n  color: #4E4E4E;\n  font-size: 16px;\n  font-weight: 300;\n}\n\n.form-group .form-control {\n  padding: 7px 12px;\n  border-color:#f2f2f2;\n  box-shadow: none;\n}\n\ntextarea#message{\n  resize: none;\n  padding: 10px;\n}\n\n#contact-page .contact-wrap {\n  margin-top: 20px;\n}\n\n/*********************\n****blog page css*****\n**********************/\n\n.widget {\n  margin-bottom: 60px;\n  padding-left: 0;\n}\n\n.single_comments {\n  margin-bottom: 20px;\n}\n\n.single_comments img {\n  float: left;\n  margin-right: 10px;\n  margin-top: 5px;\n}\n\n.single_comments p {\n  margin-bottom: 0;\n}\n\n.widget .entry-meta span {\n  display: inline-block;\n  margin-right: 10px;\n}\n\n.widget h3 {\n  color: #000;\n  text-transform: uppercase;\n  margin-bottom: 20px;\n}\n\n.blog_category{\n  list-style:none;\n  margin:0;\n  padding:0;\n}\n\n.blog_category li{\n  float:none;\n  margin-bottom:20px;\n}\n\n.blog_category li a {\n  background:#f5f5f5;\n  border-radius: 4px;\n  color: #888;\n  display: inline-block;\n  padding: 5px 15px;\n}\n\n.blog_category li a:hover{\n  background:#c52d2f;\n  color: #fff;\n}\n\n .badge:before {\n  border-color: transparent transparent transparent #c52d2f;\n  border-style: solid;\n  border-width: 10px;\n  bottom: -8px;\n  content: \"\";\n  height: 0;\n  left: 5px;\n  position: absolute;\n  z-index: -99999;\n}\n\n.badge {\n  background-color: #c52d2f;\n  border-radius: 5px;\n  color: #fff;\n  padding: 8px;\n  position: relative;\n  left: 60px;\n  top: -18px;\n  font-weight: normal;\n}\n\n.blog_archieve {\n  list-style: none outside none;\n  margin: 0;\n  padding: 0;\n}\n\n.blog_archieve li {\n  padding: 10px 0;\n  border-bottom: 1px solid #f5f5f5;\n}\n\n.blog_archieve li:first-child {\n  padding-top: 0;\n}\n\nul.gallery {\n  list-style: none;\n  padding: 0;\n  margin: 0;\n}\n\nul.gallery li {\n  display: block;\n  width: 60px;\n  padding: 0;\n  margin: 0 4px 4px 0;\n  float: left;\n}\n\nul.faq {\n  list-style: none;\n  margin: 0;\n}\n\nul.faq li {\n  margin-top: 30px;\n}\n\nul.faq li:first-child {\n  margin-top: 0;\n}\n\nul.faq li span.number {\n  display: block;\n  float: left;\n  width: 50px;\n  height: 50px;\n  line-height: 50px;\n  text-align: center;\n  background: #34495e;\n  color: #fff;\n  font-size: 24px;\n}\n\nul.faq li > div {\n  margin-left: 70px;\n}\n\nul.faq li > div h3 {\n  margin-top: 0;\n}\n\n\n.embed-container {\n  position: relative;\n  padding-bottom: 56.25%;\n  padding-top: 30px;\n  height: 0;\n  overflow: hidden;\n}\n\n.embed-container iframe,\n.embed-container object,\n.embed-container embed {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n}\n\n.blog-item {\n  border-radius: 0;\n  overflow: hidden;\n  margin-bottom: 50px;\n}\n\n.blog .blog-item .img-blog {\n  border-radius: 5px;\n  margin-bottom: 45px;\n}\n\n.blog .blog-item .blog-content {\n  padding-bottom: 25px;\n}\n\n.blog .blog-item .blog-content h2 {\n  margin-top: 0;\n  font-size: 30px;\n}\n\n.readmore{\n  margin-top: 0;\n}\n\n.blog .blog-item .blog-content h3 {\n  color: #858586;\n  margin-bottom: 40px;\n  /* font-weight: 300 */}\n\n.blog .blog-item .blog-content h4 {\n  font-size: 14px;\n}\n\n.post-tags {\n\n}\n\n.blog .blog-item .entry-meta {\n  border-radius: 5px;\n  overflow: hidden;\n}\n\n.blog .blog-item .entry-meta > span {\n  background: #f5f5f5;\n  border-top: 1px solid #fff;\n  display: block;\n  font-size: 12px;\n  overflow: hidden;\n  padding: 5px;\n  text-align: left;\n}\n\n#publish_date {\n  background: #c52d2f;\n  border-bottom: 5px solid #4e4e4e;\n  color: #fff;\n  padding: 5px 0;\n  text-align: center;\n}\n\n.blog .blog-item .entry-meta > span {\n  color: #ccc;\n}\n\n.blog .blog-item .entry-meta > span a {\n  font-size: 12px;\n  margin-left: 3px;\n  font-weight: 300;\n  color: #888;\n}\n\nul.pagination > li > a {\n  border: 1px solid #F1F1F1;\n  margin-right:5px;\n  border-radius: 5px;\n  font-size: 16px;\n  padding: 5px 14px;\n}\n\nul.pagination > li > a i{\n  margin-left:5px;\n  margin-right:5px;\n}\n\nul.pagination > li.active > a, \nul.pagination > li:hover > a {\n  background-color: #c52d2f !important;\n  border-color: #c52d2f !important;\n  color: #fff;\n}\n\n.search_box {\n  background-image: url(" + __webpack_require__(219) + ");\n  background-position: 314px 15px;\n  background-repeat: no-repeat;\n  border-color: #DEDEDE;\n  height: 48px;\n  outline: medium none;\n  box-shadow: none;\n}\n\n.form-control:focus {\n  box-shadow:none;\n  outline: 0 none;\n}\n\n\nul.tag-cloud, \nul.sidebar-gallery {\n  list-style: none;\n  padding: 0;\n  margin: 0;\n}\n\n.tag-cloud li{\n    display: inline-block;\n    margin-bottom: 3px;\n}\n\n.tag-cloud li a {\n  background: #f5f5f5;\n  color: #888;\n  border: 0;\n  border-radius: 4px;\n  padding: 8px 15px;\n}\n\n.tag-cloud li a:hover{\n  background:#c52d2f;\n  color: #fff;  \n}\n\n.sidebar-gallery li{\n  display: inline-block;\n  margin: 0 10px 10px 0;\n}\n\n.sidebar-gallery li a {\n  border-radius: 4px;\n  display: inline-block;\n}\n\n\n/**********************\n**blog single page css*\n**********************/\n\n.reply_section {\n  background: #f5f5f5;\n  border-radius: 5px;\n}\n\n.post_reply {\n  margin-left: 10px;\n  margin-top: 45px;\n}\n\n.post_reply img {\n  width: 85px;\n  height: 85px;\n  border: 5px solid #D5D8DD;\n}\n\n.post_reply ul {\n  list-style: none outside none;\n  margin: 0;\n  padding: 0;\n  margin-top: 5px;\n}\n\n.post_reply ul li{\n  float:left;\n}\n\n.post_reply ul li a {\n  display: block;\n}\n\n.post_reply ul li a i {\n  border: 1px solid #DDDDDD;\n  border-radius: 39px;\n  color: #FFFFFF;\n  font-size: 20px;\n  height: 30px;\n  margin-right: 3px;\n  padding-top: 7px;\n  text-align: center;\n  width: 30px;\n}\n\n.post_reply ul li a i.fa-facebook {\n  background: #0182C4;\n}\n\n.post_reply ul li a i.fa-twitter {\n  background: none repeat scroll 0 0 #3FC1FE;\n}\n\n.post_reply ul li a i.fa-google-plus{\n background: none repeat scroll 0 0 #D34836;\n}\n\n.post_reply ul li a i:hover{\n  opacity:.5;\n}\n\n.post_reply_content {\n  margin: 30px;\n}\n\n.post_reply_content h1 a:hover{\n  color:#FFC800;\n}\n\n.post_reply_content h4 {\n  margin-bottom: 50px;\n}\n\n.reply_section .media-body{\n  display:inherit;\n}\n\n.comment_section .media-body{\n  display:inherit;\n}\n\n#comments_title{\n   color:#4e4e4e;\n   font-weight:700px;\n   font-size:20px;\n   margin-top:60px;\n   margin-bottom:40px;\n}\n.comment_section {\n  margin-top: 30px;\n  position: relative;\n}\n\n.post_comments img {\n  width: 85px;\n  height: 85px;\n  margin-top: 35px;\n}\n\n.post_reply_comments {\n  background:#f5f5f5;\n  border-radius: 4px;\n  padding: 30px;\n}\n\n.post_reply_comments:before {\n  border-color: transparent #F0F0F0 transparent transparent;\n  border-style: solid;\n  border-width: 15px;\n  content: \" \";\n  height: 0;\n  left: 75px;\n  position: absolute;\n  top: 20px;\n}\n\n.post_reply_comments h3, \n.post_reply_content h3{\n  margin-top: 0;\n}\n\n.post_reply_comments h1 a:hover{\n  color:#c52d2f;\n}\n\n.post_reply_comments h4{\n  color:#c4c4c5;\n  font-weight:400;\n}\n\n.post_reply_comments p {\n  padding-bottom: 30px;\n}\n\n.post_reply_comments a {\n  bottom: 15px;\n  position: absolute;\n  right: 30px;\n  background: #c52d2f;\n  color: #fff;\n  border-radius: 5px;\n  padding: 8px 20px;\n}\n\n.post_reply_comments a:before {\n  border-color: #c52d2f transparent transparent;\n  border-style: solid;\n  border-width: 16px;\n  bottom: -11px;\n  content: \"\";\n  height: 0;\n  left: -12px;\n  position: absolute;\n  z-index: 99999;\n}\n\n.post_reply_comments h2 a{\n \n}\n\n.message_heading {\n  margin-bottom: 50px;\n  margin-top: 60px;\n}\n\n\n/******************\n 404 page css\n ******************/\n\n#error .btn-success:hover, \n.btn-success:focus, \n.btn-success:active, \n.btn-success.active, \n.open .dropdown-toggle.btn-success:hover {\n  background-color: #EBEBEB;\n  border-color: #EBEBEB;\n  color: #4E4E4E;\n}\n\n#error h1{\n  color: #4e4e4e;\n  text-transform: uppercase;\n}\n\n\n/******************\nshortcodes page css\n******************/\n\n.shortcode-item {\n  padding-bottom: 0;\n}\n\n.shortcode-item h2 {\n  color: #4E4E4E;\n  font-size: 24px;\n  margin-bottom: 22px;\n  margin-top: 0;\n  font-weight: 600\n}\n\n\n\n/***********************\n********* Footer ******\n************************/\n#bottom {\n  background: #f5f5f5;\n  border-bottom: 5px solid #c52d2f;\n  font-size: 14px;\n}\n\n#bottom h3 {\n  margin-top: 0;\n  margin-bottom: 10px;\n  text-transform: uppercase;\n  font-size:22px;\n  color: #000;\n}\n\n#bottom ul {\n  list-style: none;\n  padding: 0;\n  margin: 0;\n}\n\n#bottom ul li {\n  display: block;\n  padding: 5px 0;\n}\n\n#bottom ul li a {\n  color: #808080;\n}\n\n#bottom ul li a:hover {\n  color: #c52d2f;\n}\n\n#bottom .widget {\n  margin-bottom: 0;\n}\n\n#footer {\n  padding-top: 30px;\n  padding-bottom: 30px;\n  color: #fff;\n  background: #2e2e2e;\n}\n\n#footer a {\n  color: #fff;\n}\n\n#footer a:hover {\n  color: #c52d2f;\n}\n\n#footer ul {\n  list-style: none;\n  padding: 0;\n  margin: 0;\n}\n\n#footer ul > li {\n  display: inline-block;\n  margin-left: 15px;\n}\n\n\n\n\n\n\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 214 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "c41573104f98ef17b5631fbb3a989731.png";
+
+/***/ },
+/* 215 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "207178766f86b9564f1297560cf95d9a.png";
+
+/***/ },
+/* 216 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "0aa4f060ead821d9f74cbe0fb9d429a8.png";
+
+/***/ },
+/* 217 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "dd206d0c09e61c8c264689bf4da816c1.png";
+
+/***/ },
+/* 218 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "386d07eb0999407d1c4106897276352b.jpg";
+
+/***/ },
+/* 219 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "a209158e2a148d7bd446ccb51db03654.png";
+
+/***/ },
+/* 220 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(221);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(167)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./responsive.css", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./responsive.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 221 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(162)();
+	// imports
+
+
+	// module
+	exports.push([module.id, "/* lg */ \n@media (min-width: 1200px) {\n /* Make Navigation Toggle on Desktop Hover */\n  .dropdown:hover .dropdown-menu {\n      display: block;\n      -webkit-animation: fadeInUp 400ms;\n      animation: fadeInUp 400ms;\n  }\n\n  #portfolio .row {\n    margin-left: -10px;\n    margin-right: -10px;\n  }\n\n  \n\n}\n\n/* md */\n@media (min-width: 992px) and (max-width: 1199px) {\n  \n /* Make Navigation Toggle on Desktop Hover */\n  .dropdown:hover .dropdown-menu {\n      display: block;\n      -webkit-animation: fadeInUp 400ms;\n      animation: fadeInUp 400ms;\n  }\n\n  .navbar-nav > li {\n    margin-left: 10px;\n  }\n\n  .navbar-collapse {\n    padding-left: 0;\n    padding-right: 0;\n  }\n\n  .recent-work-wrap .recent-work-inner h3 a {\n    font-size: 20px;\n  }\n\n  .recent-work-wrap .overlay{\n    padding: 15px;\n  }\n\n  .services-wrap {\n    padding: 40px 10px 40px 30px;\n  }\n\n  .feature-wrap h2, \n  .single-services h2 {\n    font-size: 18px;\n  }\n\n  .feature-wrap h3, \n  .single-services h3{\n    font-size: 14px;\n  }\n\n  .tab-wrap .media .parrent.pull-left{\n    clear: both;\n    width: 100%;\n  }\n\n  .tab-wrap .media .parrent.media-body{\n    clear: both;\n  }\n\n  #portfolio .row {\n    margin-left: -10px;\n    margin-right: -10px;\n  }\n\n  .recent-work-wrap .overlay .preview{\n    line-height: inherit;\n  }\n\n  .team-bar .first-arrow {\n    width: 21%;\n  }\n\n  .team-bar .second-arrow {\n    width: 20%;\n  }\n\n  .team-bar .third-arrow {\n    width: 21%;\n  }\n\n  .team-bar .fourth-arrow {\n    width: 20%;\n  }\n\n  ul.social_icons li{\n    margin-right: 0;\n  }\n\n}\n\n\n/* sm */\n@media (min-width: 768px) and (max-width: 991px) {\n  /* Make Navigation Toggle on Desktop Hover */\n  .dropdown:hover .dropdown-menu {\n      display: block;\n      -webkit-animation: fadeInUp 400ms;\n      animation: fadeInUp 400ms;\n  }\n\n  .navbar-collapse {\n    padding-left: 0;\n    padding-right: 0;\n  }\n\n  .navbar-nav > li {\n    margin-left: 0;\n  }\n\n  #main-slider .carousel h1 {\n    font-size: 25px;\n  }\n\n  #main-slider .carousel h2 {\n    font-size: 20px;\n  }\n\n  .tab-wrap .media .parrent.pull-left, \n  .media.accordion-inner .pull-left{\n    clear: both;\n    width: 100%;\n  }\n\n  .tab-wrap .media .parrent.media-body, \n  .media.accordion-inner .media-body{\n    clear: both;\n  }\n\n  .services-wrap {\n    padding: 40px 0 40px 30px;\n  }\n\n  .recent-work-wrap .overlay{\n   padding: 15px;\n  }\n\n  .recent-work-wrap .recent-work-inner h3 a {\n    font-size: 20px;\n  }\n\n  .sinlge-skill{\n    width: 150px;\n    height: 150px;\n  } \n\n  .sinlge-skill p em {\n    font-size: 25px;\n  }\n\n  .sinlge-skill p {\n    font-size: 16px;\n  }\n\n  .team-bar .first-one-arrow {\n    width: 2%;\n  }\n\n  .team-bar .first-arrow {\n    width: 18%;\n  }\n\n  .team-bar .second-arrow {\n    width: 24%;\n  }\n\n  .team-bar .third-arrow {\n    width: 15%;\n  }\n\n  .team-bar .fourth-arrow {\n    width: 20%;\n  }\n\n  .blog .blog-item .entry-meta > span a{\n    font-size: 10px;\n  }\n}\n\n/* xs */\n@media (max-width: 767px) {\n  .container > .navbar-header, .container > .navbar-collapse{\n    margin-left: 0;\n  }\n\n  .top-number{\n    font-size: 14px;\n  }\n\n  input.search-form:hover {\n    width: 120px;\n  }\n\n  .navbar-nav > li {\n    padding-bottom: 0;\n  }\n\n  #main-slider .carousel h1 {\n    font-size: 25px;\n  }\n\n  #main-slider .carousel h2 {\n    font-size: 16px;\n  }\n\n  .feature-wrap h2, \n  .single-services h2 {\n    font-size: 18px;\n  }\n\n  .feature-wrap h3, \n  .single-services h3{\n    font-size: 14px;\n  }\n\n\n  .media.accordion-inner .pull-left, \n  .media.accordion-inner .media-body{\n    clear: both;\n  }\n\n  .accordion-inner h4 {\n    margin-top: 10px;\n  }\n\n  .tab-wrap .media .pull-left{\n    clear: both;\n    width: 100%;\n  }\n\n  .tab-wrap .media .media-body{\n    clear: both;\n  }\n\n  .nav-tabs > li.active > a:after{\n    display: none;\n  }\n\n  #footer .col-sm-6{\n      text-align:center;\n  }\n  \n   #footer .pull-right{\n      float: none !important;\n  }\n\n  .sinlge-skill {\n    margin: 0 auto;\n    margin-top: 30px;\n    margin-bottom: 30px;\n  }\n\n  .team .single-profile-top, \n  .team .single-profile-bottom {\n    margin-bottom: 30px;\n  }\n\n  .clients-area {\n    padding: 60px 0;\n  }\n\n  .clients-area h1 {\n    font-size: 25px;\n  }\n\n  .portfolio-item, \n  #recent-works .col-xs-12.col-sm-4.col-md-3{\n    padding:0 15px;\n  }\n\n  ul.social_icons li{\n    margin-right: 0;\n  }\n\n  .blog .blog-item .entry-meta{\n    margin-bottom: 20px;\n  }\n\n  .blog .blog-item .blog-content h3 {\n    margin-bottom: 20px;\n  }\n\n  .post_reply_comments {\n    padding-left: 20px;\n  }\n    \n\n}\n\n/* XS Portrait */\n@media (max-width: 480px) {\n\n\n}\n\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 222 */
+/***/ function(module, exports, __webpack_require__) {
+
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("C:\\Projects2012\\react-xin-corlate\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("C:\\Projects2012\\react-xin-corlate\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
 	'use strict';
@@ -20204,7 +20601,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\Projects2012\\react-xin-corlate\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "button.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 177 */
+/* 223 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("C:\\Projects2012\\react-xin-corlate\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("C:\\Projects2012\\react-xin-corlate\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -20229,13 +20626,13 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var Carousel = function (_React$component) {
-		_inherits(Carousel, _React$component);
+	var Carousel = function (_React$Component) {
+		_inherits(Carousel, _React$Component);
 
-		function Carousel() {
+		function Carousel(props) {
 			_classCallCheck(this, Carousel);
 
-			return _possibleConstructorReturn(this, Object.getPrototypeOf(Carousel).apply(this, arguments));
+			return _possibleConstructorReturn(this, Object.getPrototypeOf(Carousel).call(this, props));
 		}
 
 		_createClass(Carousel, [{
@@ -20243,13 +20640,14 @@
 			value: function render() {
 				return _react2.default.createElement(
 					"div",
-					{ id: "carousel-example-generic", className: "carousel slide", "data-ride": "carousel" },
+					{ id: "carousel-example-generic", className: "carousel slide", "data-ride": "carousel", "data-interval": "2000" },
 					_react2.default.createElement(
 						"ol",
 						{ className: "carousel-indicators" },
 						_react2.default.createElement("li", { "data-target": "#carousel-example-generic", "data-slide-to": "0", className: "active" }),
 						_react2.default.createElement("li", { "data-target": "#carousel-example-generic", "data-slide-to": "1" }),
-						_react2.default.createElement("li", { "data-target": "#carousel-example-generic", "data-slide-to": "2" })
+						_react2.default.createElement("li", { "data-target": "#carousel-example-generic", "data-slide-to": "2" }),
+						_react2.default.createElement("li", { "data-target": "#carousel-example-generic", "data-slide-to": "3" })
 					),
 					_react2.default.createElement(
 						"div",
@@ -20290,11 +20688,617 @@
 		}]);
 
 		return Carousel;
-	}(_react2.default.component);
+	}(_react2.default.Component);
 
 	exports.default = Carousel;
 
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\Projects2012\\react-xin-corlate\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "carousel.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ },
+/* 224 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("C:\\Projects2012\\react-xin-corlate\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("C:\\Projects2012\\react-xin-corlate\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _topBar = __webpack_require__(225);
+
+	var _topBar2 = _interopRequireDefault(_topBar);
+
+	var _navigation = __webpack_require__(226);
+
+	var _navigation2 = _interopRequireDefault(_navigation);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Header = function (_React$Component) {
+		_inherits(Header, _React$Component);
+
+		function Header(props) {
+			_classCallCheck(this, Header);
+
+			return _possibleConstructorReturn(this, Object.getPrototypeOf(Header).call(this, props));
+		}
+
+		_createClass(Header, [{
+			key: 'render',
+			value: function render() {
+				return _react2.default.createElement(
+					'div',
+					{ id: 'header' },
+					_react2.default.createElement(_topBar2.default, null),
+					_react2.default.createElement(_navigation2.default, null)
+				);
+			}
+		}]);
+
+		return Header;
+	}(_react2.default.Component);
+
+	exports.default = Header;
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\Projects2012\\react-xin-corlate\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "header.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ },
+/* 225 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("C:\\Projects2012\\react-xin-corlate\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("C:\\Projects2012\\react-xin-corlate\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var TopBar = function (_React$Component) {
+	    _inherits(TopBar, _React$Component);
+
+	    function TopBar(props) {
+	        _classCallCheck(this, TopBar);
+
+	        return _possibleConstructorReturn(this, Object.getPrototypeOf(TopBar).call(this, props));
+	    }
+
+	    _createClass(TopBar, [{
+	        key: "render",
+	        value: function render() {
+	            return _react2.default.createElement(
+	                "div",
+	                { className: "top-bar" },
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "container" },
+	                    _react2.default.createElement(
+	                        "div",
+	                        { className: "row" },
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "col-sm-6 col-xs-4" },
+	                            _react2.default.createElement(
+	                                "div",
+	                                { className: "top-number" },
+	                                _react2.default.createElement(
+	                                    "p",
+	                                    null,
+	                                    _react2.default.createElement("i", { className: "fa fa-phone-square" }),
+	                                    "  +0123 456 70 90"
+	                                )
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "col-sm-6 col-xs-8" },
+	                            _react2.default.createElement(
+	                                "div",
+	                                { className: "social" },
+	                                _react2.default.createElement(
+	                                    "ul",
+	                                    { className: "social-share" },
+	                                    _react2.default.createElement(
+	                                        "li",
+	                                        null,
+	                                        _react2.default.createElement(
+	                                            "a",
+	                                            { href: "#" },
+	                                            _react2.default.createElement("i", { className: "fa fa-facebook" })
+	                                        )
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        "li",
+	                                        null,
+	                                        _react2.default.createElement(
+	                                            "a",
+	                                            { href: "#" },
+	                                            _react2.default.createElement("i", { className: "fa fa-twitter" })
+	                                        )
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        "li",
+	                                        null,
+	                                        _react2.default.createElement(
+	                                            "a",
+	                                            { href: "#" },
+	                                            _react2.default.createElement("i", { className: "fa fa-linkedin" })
+	                                        )
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        "li",
+	                                        null,
+	                                        _react2.default.createElement(
+	                                            "a",
+	                                            { href: "#" },
+	                                            _react2.default.createElement("i", { className: "fa fa-dribbble" })
+	                                        )
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        "li",
+	                                        null,
+	                                        _react2.default.createElement(
+	                                            "a",
+	                                            { href: "#" },
+	                                            _react2.default.createElement("i", { className: "fa fa-skype" })
+	                                        )
+	                                    )
+	                                ),
+	                                _react2.default.createElement(
+	                                    "div",
+	                                    { className: "search" },
+	                                    _react2.default.createElement(
+	                                        "form",
+	                                        { role: "form" },
+	                                        _react2.default.createElement("input", { type: "text", className: "search-form", autocomplete: "off", placeholder: "Search" }),
+	                                        _react2.default.createElement("i", { className: "fa fa-search" })
+	                                    )
+	                                )
+	                            )
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+
+	    return TopBar;
+	}(_react2.default.Component);
+
+	exports.default = TopBar;
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\Projects2012\\react-xin-corlate\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "topBar.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ },
+/* 226 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("C:\\Projects2012\\react-xin-corlate\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("C:\\Projects2012\\react-xin-corlate\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Navigation = function (_React$Component) {
+	    _inherits(Navigation, _React$Component);
+
+	    function Navigation(props) {
+	        _classCallCheck(this, Navigation);
+
+	        return _possibleConstructorReturn(this, Object.getPrototypeOf(Navigation).call(this, props));
+	    }
+
+	    _createClass(Navigation, [{
+	        key: "render",
+	        value: function render() {
+	            return _react2.default.createElement(
+	                "nav",
+	                { className: "navbar navbar-inverse", role: "banner" },
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "container" },
+	                    _react2.default.createElement(
+	                        "div",
+	                        { className: "navbar-header" },
+	                        _react2.default.createElement(
+	                            "button",
+	                            { type: "button", className: "navbar-toggle", "data-toggle": "collapse", "data-target": ".navbar-collapse" },
+	                            _react2.default.createElement(
+	                                "span",
+	                                { className: "sr-only" },
+	                                "Toggle navigation"
+	                            ),
+	                            _react2.default.createElement("span", { className: "icon-bar" }),
+	                            _react2.default.createElement("span", { className: "icon-bar" }),
+	                            _react2.default.createElement("span", { className: "icon-bar" })
+	                        ),
+	                        _react2.default.createElement(
+	                            "a",
+	                            { className: "navbar-brand", href: "index.html" },
+	                            _react2.default.createElement("img", { src: "images/logo.png", alt: "logo" })
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        "div",
+	                        { className: "collapse navbar-collapse navbar-right" },
+	                        _react2.default.createElement(
+	                            "ul",
+	                            { className: "nav navbar-nav" },
+	                            _react2.default.createElement(
+	                                "li",
+	                                { className: "active" },
+	                                _react2.default.createElement(
+	                                    "a",
+	                                    { href: "index.html" },
+	                                    "Home"
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                "li",
+	                                null,
+	                                _react2.default.createElement(
+	                                    "a",
+	                                    { href: "about-us.html" },
+	                                    "About Us"
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                "li",
+	                                null,
+	                                _react2.default.createElement(
+	                                    "a",
+	                                    { href: "services.html" },
+	                                    "Services"
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                "li",
+	                                null,
+	                                _react2.default.createElement(
+	                                    "a",
+	                                    { href: "portfolio.html" },
+	                                    "Portfolio"
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                "li",
+	                                { className: "dropdown" },
+	                                _react2.default.createElement(
+	                                    "a",
+	                                    { href: "#", className: "dropdown-toggle", "data-toggle": "dropdown" },
+	                                    "Pages ",
+	                                    _react2.default.createElement("i", { className: "fa fa-angle-down" })
+	                                ),
+	                                _react2.default.createElement(
+	                                    "ul",
+	                                    { className: "dropdown-menu" },
+	                                    _react2.default.createElement(
+	                                        "li",
+	                                        null,
+	                                        _react2.default.createElement(
+	                                            "a",
+	                                            { href: "blog-item.html" },
+	                                            "Blog Single"
+	                                        )
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        "li",
+	                                        null,
+	                                        _react2.default.createElement(
+	                                            "a",
+	                                            { href: "pricing.html" },
+	                                            "Pricing"
+	                                        )
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        "li",
+	                                        null,
+	                                        _react2.default.createElement(
+	                                            "a",
+	                                            { href: "404.html" },
+	                                            "404"
+	                                        )
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        "li",
+	                                        null,
+	                                        _react2.default.createElement(
+	                                            "a",
+	                                            { href: "shortcodes.html" },
+	                                            "Shortcodes"
+	                                        )
+	                                    )
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                "li",
+	                                null,
+	                                _react2.default.createElement(
+	                                    "a",
+	                                    { href: "blog.html" },
+	                                    "Blog"
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                "li",
+	                                null,
+	                                _react2.default.createElement(
+	                                    "a",
+	                                    { href: "contact-us.html" },
+	                                    "Contact"
+	                                )
+	                            )
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+
+	    return Navigation;
+	}(_react2.default.Component);
+
+	exports.default = Navigation;
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\Projects2012\\react-xin-corlate\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "navigation.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ },
+/* 227 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("C:\\Projects2012\\react-xin-corlate\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("C:\\Projects2012\\react-xin-corlate\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+			value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Slider = function (_React$Component) {
+			_inherits(Slider, _React$Component);
+
+			function Slider(props) {
+					_classCallCheck(this, Slider);
+
+					return _possibleConstructorReturn(this, Object.getPrototypeOf(Slider).call(this, props));
+			}
+
+			_createClass(Slider, [{
+					key: "render",
+					value: function render() {
+							return _react2.default.createElement(
+									"div",
+									{ id: "main-slider", className: "no-margin" },
+									_react2.default.createElement(
+											"div",
+											{ className: "carousel slide", "data-ride": "carousel", "data-interval": "2000" },
+											_react2.default.createElement(
+													"ol",
+													{ className: "carousel-indicators" },
+													_react2.default.createElement("li", { "data-target": "#main-slider", "data-slide-to": "0", className: "active" }),
+													_react2.default.createElement("li", { "data-target": "#main-slider", "data-slide-to": "1" }),
+													_react2.default.createElement("li", { "data-target": "#main-slider", "data-slide-to": "2" })
+											),
+											_react2.default.createElement(
+													"div",
+													{ className: "carousel-inner" },
+													_react2.default.createElement(
+															"div",
+															{ className: "item active", style: "{{background-image: url(images/slider/bg1.jpg)}" },
+															_react2.default.createElement(
+																	"div",
+																	{ className: "container" },
+																	_react2.default.createElement(
+																			"div",
+																			{ className: "row slide-margin" },
+																			_react2.default.createElement(
+																					"div",
+																					{ className: "col-sm-6" },
+																					_react2.default.createElement(
+																							"div",
+																							{ className: "carousel-content" },
+																							_react2.default.createElement(
+																									"h1",
+																									{ className: "animation animated-item-1" },
+																									"Lorem ipsum dolor sit amet consectetur adipisicing elit"
+																							),
+																							_react2.default.createElement(
+																									"h2",
+																									{ className: "animation animated-item-2" },
+																									"Accusantium doloremque laudantium totam rem aperiam, eaque ipsa..."
+																							),
+																							_react2.default.createElement(
+																									"a",
+																									{ className: "btn-slide animation animated-item-3", href: "#" },
+																									"Read More"
+																							)
+																					)
+																			),
+																			_react2.default.createElement(
+																					"div",
+																					{ className: "col-sm-6 hidden-xs animation animated-item-4" },
+																					_react2.default.createElement(
+																							"div",
+																							{ className: "slider-img" },
+																							_react2.default.createElement("img", { src: "images/slider/img1.png", className: "img-responsive" })
+																					)
+																			)
+																	)
+															)
+													),
+													"//item",
+													_react2.default.createElement(
+															"div",
+															{ className: "item", style: "{{background-image: url(images/slider/bg2.jpg)}" },
+															_react2.default.createElement(
+																	"div",
+																	{ className: "container" },
+																	_react2.default.createElement(
+																			"div",
+																			{ className: "row slide-margin" },
+																			_react2.default.createElement(
+																					"div",
+																					{ className: "col-sm-6" },
+																					_react2.default.createElement(
+																							"div",
+																							{ className: "carousel-content" },
+																							_react2.default.createElement(
+																									"h1",
+																									{ className: "animation animated-item-1" },
+																									"Lorem ipsum dolor sit amet consectetur adipisicing elit"
+																							),
+																							_react2.default.createElement(
+																									"h2",
+																									{ className: "animation animated-item-2" },
+																									"Accusantium doloremque laudantium totam rem aperiam, eaque ipsa..."
+																							),
+																							_react2.default.createElement(
+																									"a",
+																									{ className: "btn-slide animation animated-item-3", href: "#" },
+																									"Read More"
+																							)
+																					)
+																			),
+																			_react2.default.createElement(
+																					"div",
+																					{ className: "col-sm-6 hidden-xs animation animated-item-4" },
+																					_react2.default.createElement(
+																							"div",
+																							{ className: "slider-img" },
+																							_react2.default.createElement("img", { src: "images/slider/img2.png", className: "img-responsive" })
+																					)
+																			)
+																	)
+															)
+													),
+													"//item",
+													_react2.default.createElement(
+															"div",
+															{ className: "item", style: "{{background-image: url(images/slider/bg3.jpg)}" },
+															_react2.default.createElement(
+																	"div",
+																	{ className: "container" },
+																	_react2.default.createElement(
+																			"div",
+																			{ className: "row slide-margin" },
+																			_react2.default.createElement(
+																					"div",
+																					{ className: "col-sm-6" },
+																					_react2.default.createElement(
+																							"div",
+																							{ className: "carousel-content" },
+																							_react2.default.createElement(
+																									"h1",
+																									{ className: "animation animated-item-1" },
+																									"Lorem ipsum dolor sit amet consectetur adipisicing elit"
+																							),
+																							_react2.default.createElement(
+																									"h2",
+																									{ className: "animation animated-item-2" },
+																									"Accusantium doloremque laudantium totam rem aperiam, eaque ipsa..."
+																							),
+																							_react2.default.createElement(
+																									"a",
+																									{ className: "btn-slide animation animated-item-3", href: "#" },
+																									"Read More"
+																							)
+																					)
+																			),
+																			_react2.default.createElement(
+																					"div",
+																					{ className: "col-sm-6 hidden-xs animation animated-item-4" },
+																					_react2.default.createElement(
+																							"div",
+																							{ className: "slider-img" },
+																							_react2.default.createElement("img", { src: "images/slider/img3.png", className: "img-responsive" })
+																					)
+																			)
+																	)
+															)
+													),
+													"//item"
+											),
+											"//carousel - inner"
+									),
+									"//carousel",
+									_react2.default.createElement(
+											"a",
+											{ className: "prev hidden-xs", href: "#main-slider", "data-slide": "prev" },
+											_react2.default.createElement("i", { className: "fa fa-chevron-left" })
+									),
+									_react2.default.createElement(
+											"a",
+											{ className: "next hidden-xs", href: "#main-slider", "data-slide": "next" },
+											_react2.default.createElement("i", { className: "fa fa-chevron-right" })
+									)
+							);
+					}
+			}]);
+
+			return Slider;
+	}(_react2.default.Component);
+
+	exports.default = Slider;
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\Projects2012\\react-xin-corlate\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "slider.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ }
 /******/ ]);
