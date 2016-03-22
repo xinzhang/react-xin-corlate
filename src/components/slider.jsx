@@ -7,7 +7,7 @@ class Slider extends React.Component {
 
 	render() {
 
-		var divStyle = { backgroundIimage: 'url(images/slider/bg1.jpg)'};
+		var divStyle = { backgroundImage: 'url(images/slider/bg1.jpg)'};
 
 		return(
 		    <div id="main-slider" className="no-margin" >
@@ -62,7 +62,7 @@ class Slider extends React.Component {
 		                    </div>
 		                </div>{/*item */}
 
-		                <div className="item">
+		                <div className="item" style={{ "backgroundImage": "url(images/slider/bg3.jpg)" }}>
 		                    <div className="container">
 		                        <div className="row slide-margin">
 		                            <div className="col-sm-6">
